@@ -1,0 +1,1130 @@
+{
+  "@context" : {
+    "greenOpenSpace" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#greenOpenSpace"
+    },
+    "Labor" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Labor"
+    },
+    "electricPowerQuality" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#electricPowerQuality"
+    },
+    "gdpUMI" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#gdpUMI"
+    },
+    "localGovernmentsInTheCore" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#localGovernmentsInTheCore"
+    },
+    "residential" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#residential"
+    },
+    "industrial1" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#industrial1"
+    },
+    "residential1" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#residential1"
+    },
+    "sprawlIndex" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#sprawlIndex"
+    },
+    "humanitarianAid" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#humanitarianAid"
+    },
+    "Economy" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Economy"
+    },
+    "higherEducationDegrees" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#higherEducationDegrees"
+    },
+    "numberOf2-WheeledVehicles" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#numberOf2-WheeledVehicles"
+    },
+    "transportation" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#transportation"
+    },
+    "cO2TransportEmissionsOfTheMetropolitanArea" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#cO2TransportEmissionsOfTheMetropolitanArea"
+    },
+    "populationAbove25YearsOfAgeWithAnUndergraduateDegreeOrAbove" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#populationAbove25YearsOfAgeWithAnUndergraduateDegreeOrAbove"
+    },
+    "innovations" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#innovations"
+    },
+    "fuelOil" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#fuelOil"
+    },
+    "policeResponseTime" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#policeResponseTime"
+    },
+    "electricalInterruptionLength" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#electricalInterruptionLength"
+    },
+    "expendituresForCultureAndRecreation" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#expendituresForCultureAndRecreation"
+    },
+    "Social" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Social"
+    },
+    "hydropower" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#hydropower"
+    },
+    "cityProductPerCapita" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#cityProductPerCapita"
+    },
+    "GDP" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#GDP"
+    },
+    "socialAssistance" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#socialAssistance"
+    },
+    "annualSolarRadiation" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#annualSolarRadiation"
+    },
+    "naturalizations" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#naturalizations"
+    },
+    "Employment" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Employment"
+    },
+    "stemJobsGrowthRate" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#stemJobsGrowthRate"
+    },
+    "secondaryWastewaterTreatment" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#secondaryWastewaterTreatment"
+    },
+    "HousingRatio" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#jobs/HousingRatio"
+    },
+    "disposalByOther" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#disposalByOther"
+    },
+    "mobillity" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#mobillity"
+    },
+    "foreign-bornPopulation" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#foreign-bornPopulation"
+    },
+    "employment" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#employment"
+    },
+    "noDirectWaterAccess" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#noDirectWaterAccess"
+    },
+    "secondaryEducationCompletion" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#secondaryEducationCompletion"
+    },
+    "naturalGas" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#naturalGas"
+    },
+    "householdIncome" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#householdIncome"
+    },
+    "womenInExecutivePositions" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#womenInExecutivePositions"
+    },
+    "pctPatentsApplicationsPer10000Inhabitants" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#pctPatentsApplicationsPer10000Inhabitants"
+    },
+    "in-patientHospitalBeds" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#in-patientHospitalBeds"
+    },
+    "Health" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Health"
+    },
+    "labourProductivity" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#labourProductivity"
+    },
+    "genderGapInEarnings" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#genderGapInEarnings"
+    },
+    "ozoneLevels" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#ozoneLevels"
+    },
+    "pM2.5AverageLevels" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#pM2.5AverageLevels"
+    },
+    "populationOfTheCityArea" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#populationOfTheCityArea"
+    },
+    "climate" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#climate"
+    },
+    "food" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#food"
+    },
+    "annualPopulationChange" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#annualPopulationChange"
+    },
+    "totalWaterConsumption" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#totalWaterConsumption"
+    },
+    "concentrationOfPopulationInTheCore" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#concentrationOfPopulationInTheCore"
+    },
+    "totalCityPopulation" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#totalCityPopulation"
+    },
+    "adultPopulation" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#adultPopulation"
+    },
+    "ICT" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#ICT"
+    },
+    "electricityConsumptionUMI" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#electricityConsumptionUMI"
+    },
+    "householdsWithoutAccessToPipedWaterAndSanitation" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#householdsWithoutAccessToPipedWaterAndSanitation"
+    },
+    "electricityConsumptionGrid" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#electricityConsumptionGrid"
+    },
+    "Poverty" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Poverty"
+    },
+    "noPublicWasteCollection" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#noPublicWasteCollection"
+    },
+    "maleStudentEnrolment" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#maleStudentEnrolment"
+    },
+    "prevalenceOfObesity" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#prevalenceOfObesity"
+    },
+    "materialsConsumption" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#materialsConsumption"
+    },
+    "solidWasteRecycled" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#solidWasteRecycled"
+    },
+    "numberOfNaturalGasVehicles" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#numberOfNaturalGasVehicles"
+    },
+    "unemploymentAsAShareOfTheLabourForce" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#unemploymentAsAShareOfTheLabourForce"
+    },
+    "lightPassengerPublicTransit" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#lightPassengerPublicTransit"
+    },
+    "natureAndLandscape" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#natureAndLandscape"
+    },
+    "numberOfNativeSpecies" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#numberOfNativeSpecies"
+    },
+    "numberOfBuildingsWithPV" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#numberOfBuildingsWithPV"
+    },
+    "unemploymentRate2" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#unemploymentRate2"
+    },
+    "grossOperatingBudget" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#grossOperatingBudget"
+    },
+    "pm2.5Concentration" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#pm2.5Concentration"
+    },
+    "biodiversity" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#biodiversity"
+    },
+    "income" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#income"
+    },
+    "primaryWastewaterTreatment" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#primaryWastewaterTreatment"
+    },
+    "publicTransportUseForWorkCommute" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#publicTransportUseForWorkCommute"
+    },
+    "Waste" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Waste"
+    },
+    "dominantDistributor" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#dominantDistributor"
+    },
+    "transportationFatalities" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#transportationFatalities"
+    },
+    "taxes" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#taxes"
+    },
+    "womenElectedToOffice" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#womenElectedToOffice"
+    },
+    "estimatedAverageExposureToAirPollution" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#estimatedAverageExposureToAirPollution"
+    },
+    "sPopulation" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#percentageOfCountry'sPopulation"
+    },
+    "noInternetAccess" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#noInternetAccess"
+    },
+    "mobilePhonesUsage" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#mobilePhonesUsage"
+    },
+    "populationDensity" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#populationDensity"
+    },
+    "noDirectDrinkableWaterAccess" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#noDirectDrinkableWaterAccess"
+    },
+    "high-CapacityPublicTransit" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#high-CapacityPublicTransit"
+    },
+    "disposalByOpenDump" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#disposalByOpenDump"
+    },
+    "informalSettlements" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#informalSettlements"
+    },
+    "health" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#health"
+    },
+    "disconnectedYouth" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#disconnectedYouth"
+    },
+    "non-citizenPopulation" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#non-citizenPopulation"
+    },
+    "changeInNativeSpecies" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#changeInNativeSpecies"
+    },
+    "CI" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#CI"
+    },
+    "Education" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Education"
+    },
+    "ownership4" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#ownership4"
+    },
+    "waterLineLosses" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#waterLineLosses"
+    },
+    "TerritorialFragmentation" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#TerritorialFragmentation"
+    },
+    "Midwives" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#numberOfNurses/Midwives"
+    },
+    "buildingGrossFloorAreas" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#buildingGrossFloorAreas"
+    },
+    "numberOfNewPatents" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#numberOfNewPatents"
+    },
+    "ownership2" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#ownership2"
+    },
+    "hazardousWasteRecycled" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#hazardousWasteRecycled"
+    },
+    "waterServiceInterruptions" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#waterServiceInterruptions"
+    },
+    "potableWaterService" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#potableWaterService"
+    },
+    "heatingDegreeDays" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#heatingDegreeDays"
+    },
+    "waterQuality" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#waterQuality"
+    },
+    "noGridElectricityConnection" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#noGridElectricityConnection"
+    },
+    "ghgEmissions" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#ghgEmissions"
+    },
+    "numberOfBusinesses" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#numberOfBusinesses"
+    },
+    "independentRegulator4" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#independentRegulator4"
+    },
+    "authorizedElectricalService" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#authorizedElectricalService"
+    },
+    "capitalSpending" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#capitalSpending"
+    },
+    "newImmigrantPopulation" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#newImmigrantPopulation"
+    },
+    "Others_Econ" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Others_Econ"
+    },
+    "wasteIncineration" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#wasteIncineration"
+    },
+    "electricityFromRenewableSources" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#electricityFromRenewableSources"
+    },
+    "knowHow" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#knowHow"
+    },
+    "Mobillity" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Mobillity"
+    },
+    "countryGDP" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#countryGDP"
+    },
+    "populationOfTheMetropolitanAreaAsAShareOfNationalValue" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#populationOfTheMetropolitanAreaAsAShareOfNationalValue"
+    },
+    "outdoorRecreationSpace" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#outdoorRecreationSpace"
+    },
+    "childrenUnder18LivingBelowTwiceThePovertyThreshold" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#childrenUnder18LivingBelowTwiceThePovertyThreshold"
+    },
+    "numberOfHomicides" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#numberOfHomicides"
+    },
+    "noise" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#noise"
+    },
+    "landArea" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#landArea"
+    },
+    "electricityConsumptionStationary" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#electricityConsumptionStationary"
+    },
+    "wastewaterVolume" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#wastewaterVolume"
+    },
+    "OECD" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#OECD"
+    },
+    "numberOfLocalDistributors2" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#numberOfLocalDistributors2"
+    },
+    "employmentAsAShareOfTheWorkingAgePopulation" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#employmentAsAShareOfTheWorkingAgePopulation"
+    },
+    "greenAreaISO" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#greenAreaISO"
+    },
+    "hoursWithoutElectricity" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#hoursWithoutElectricity"
+    },
+    "waterLoss" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#waterLoss"
+    },
+    "walkingOrBicyclingForWorkCommute" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#walkingOrBicyclingForWorkCommute"
+    },
+    "Materials" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Materials"
+    },
+    "Air" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Air"
+    },
+    "gdpPerCapita" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#gdpPerCapita"
+    },
+    "giniCoefficient" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#giniCoefficient"
+    },
+    "voterParticipationRate" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#voterParticipationRate"
+    },
+    "accessToParks" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#accessToParks"
+    },
+    "Patent" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Patent"
+    },
+    "snowfall" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#snowfall"
+    },
+    "solidWasteCollected" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#solidWasteCollected"
+    },
+    "investments" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#investments"
+    },
+    "cO2EmissionsPerCapita" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#cO2EmissionsPerCapita"
+    },
+    "teenageBirths" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#teenageBirths"
+    },
+    "improvedSanitationAccess" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#improvedSanitationAccess"
+    },
+    "internetConnections" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#internetConnections"
+    },
+    "coolingDegreeDays" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#coolingDegreeDays"
+    },
+    "ownership5" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#ownership5"
+    },
+    "gunViolence" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#gunViolence"
+    },
+    "grossMetropolitanProductGrowthRatePerCapita" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#grossMetropolitanProductGrowthRatePerCapita"
+    },
+    "Population" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Population"
+    },
+    "domesticWaterConsumption" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#domesticWaterConsumption"
+    },
+    "Energy" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Energy"
+    },
+    "greenArea" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#greenArea"
+    },
+    "Water" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Water"
+    },
+    "Land" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Land"
+    },
+    "surfaceWaterProduction" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#surfaceWaterProduction"
+    },
+    "youthPopulation" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#youthPopulation"
+    },
+    "healthInsuranceCoverage" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#healthInsuranceCoverage"
+    },
+    "groundWaterProduction" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#groundWaterProduction"
+    },
+    "pm10Concentration" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#pm10Concentration"
+    },
+    "Electricity" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Electricity"
+    },
+    "pctPatentApplicationsOfTheMetropolitanArea" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#pctPatentApplicationsOfTheMetropolitanArea"
+    },
+    "fireResponseTime" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#fireResponseTime"
+    },
+    "gdpOfTheMetropolitanArea" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#gdpOfTheMetropolitanArea"
+    },
+    "numberOfDistributors" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#numberOfDistributors"
+    },
+    "residentialElectricalUse" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#residentialElectricalUse"
+    },
+    "naturalDisasterRelatedDeaths" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#naturalDisasterRelatedDeaths"
+    },
+    "trafficDeaths" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#trafficDeaths"
+    },
+    "ghgEmissionsFactor" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#ghgEmissionsFactor"
+    },
+    "urbanisedArea" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#urbanisedArea"
+    },
+    "persantageOfConsumptionFromIndependentGenerators" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#persantageOfConsumptionFromIndependentGenerators"
+    },
+    "populationUMI" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#populationUMI"
+    },
+    "annualEmploymentChange" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#annualEmploymentChange"
+    },
+    "numberOfLocalDistributors3" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#numberOfLocalDistributors3"
+    },
+    "debtServiceRatio" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#debtServiceRatio"
+    },
+    "womenEmployedInCityGovernment" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#womenEmployedInCityGovernment"
+    },
+    "temperature" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#temperature"
+    },
+    "populationLivingInPoverty" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#populationLivingInPoverty"
+    },
+    "urbanisedAreaShare" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#urbanisedAreaShare"
+    },
+    "numberOfPropertyCrimes" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#numberOfPropertyCrimes"
+    },
+    "independentRegulator5" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#independentRegulator5"
+    },
+    "realPerCapitaPersonalIncome" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#realPerCapitaPersonalIncome"
+    },
+    "wastewaterCollection" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#wastewaterCollection"
+    },
+    "sGDP" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#percentageOfCountry'sGDP"
+    },
+    "averagePopulationSizeOfLocalGovernment" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#averagePopulationSizeOfLocalGovernment"
+    },
+    "Climate" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Climate"
+    },
+    "patentApplications" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#patentApplications"
+    },
+    "participationRate" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#participationRate"
+    },
+    "primaryCarePhysicians" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#primaryCarePhysicians"
+    },
+    "dwellingDensity" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#dwellingDensity"
+    },
+    "populationLivingInSlums" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#populationLivingInSlums"
+    },
+    "noSewage" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#noSewage"
+    },
+    "landlineConnections" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#landlineConnections"
+    },
+    "lowBirthWeight" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#lowBirthWeight"
+    },
+    "Quality_Of_Service" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Quality_Of_Service"
+    },
+    "labourForce" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#labourForce"
+    },
+    "numberOfPowerSuppliers" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#numberOfPowerSuppliers"
+    },
+    "stationaryEnergyConsumptionUMI" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#stationaryEnergyConsumptionUMI"
+    },
+    "grossCapitalBudget" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#grossCapitalBudget"
+    },
+    "numberOfViolentCrimes" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#numberOfViolentCrimes"
+    },
+    "labourForceOfTheMetropolitanArea" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#labourForceOfTheMetropolitanArea"
+    },
+    "electricalLineLosses" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#electricalLineLosses"
+    },
+    "electricalInterruptions" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#electricalInterruptions"
+    },
+    "off-siteWind" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#off-siteWind"
+    },
+    "pctPatentApplications" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#pctPatentApplications"
+    },
+    "soilQuality" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#soilQuality"
+    },
+    "industrial" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#industrial"
+    },
+    "ownership3" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#ownership3"
+    },
+    "ISO37120" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#ISO37120"
+    },
+    "unemploymentRate" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#unemploymentRate"
+    },
+    "FemaleRatio" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#male/FemaleRatio"
+    },
+    "volunteerFirefighters" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#volunteerFirefighters"
+    },
+    "Solid_Waste" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Solid_Waste"
+    },
+    "waterConsumption" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#waterConsumption"
+    },
+    "shareOfRenewableEnergyGenerated" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#shareOfRenewableEnergyGenerated"
+    },
+    "publicFinance" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#publicFinance"
+    },
+    "qualityOfHigherEducation" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#qualityOfHigherEducation"
+    },
+    "GonorrheaCases" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#syphilis,Chlamydia,GonorrheaCases"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "numberOfPhysicians" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#numberOfPhysicians"
+    },
+    "publicBuildingElectricityUse" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#publicBuildingElectricityUse"
+    },
+    "emergencyResponseTime" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#emergencyResponseTime"
+    },
+    "populationOfTheCommutingZoneArea" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#populationOfTheCommutingZoneArea"
+    },
+    "countryGDPPerCapita" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#countryGDPPerCapita"
+    },
+    "TeacherRatio" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#student/TeacherRatio"
+    },
+    "sexualViolenceIncidencesReported" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#sexualViolenceIncidencesReported"
+    },
+    "localGovernments" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#localGovernments"
+    },
+    "numberOfPoliceOfficers" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#numberOfPoliceOfficers"
+    },
+    "ePACleanupSites" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#ePACleanupSites"
+    },
+    "publicTransitTrips" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#publicTransitTrips"
+    },
+    "bicyclePaths" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#bicyclePaths"
+    },
+    "Cooling" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#districtHeating/Cooling"
+    },
+    "materialsConsumption1" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#materialsConsumption1"
+    },
+    "cO2EnergyEmissionsOfTheMetropolitanArea" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#cO2EnergyEmissionsOfTheMetropolitanArea"
+    },
+    "numberOfRegisteredVoters" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#numberOfRegisteredVoters"
+    },
+    "biomass" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#biomass"
+    },
+    "non-residentialArea" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#non-residentialArea"
+    },
+    "Wastewater" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Wastewater"
+    },
+    "disposalByIncinerator" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#disposalByIncinerator"
+    },
+    "rainfall" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#rainfall"
+    },
+    "Environment" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Environment"
+    },
+    "mortgagedHomeownersSpending30PersentOrMoreOfHouseholdIncomeOnSelectedOwnerCosts" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#mortgagedHomeownersSpending30PersentOrMoreOfHouseholdIncomeOnSelectedOwnerCosts"
+    },
+    "households" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#households"
+    },
+    "disposalByLandfill" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#disposalByLandfill"
+    },
+    "roadTrafficAccidentsWithVictims" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#roadTrafficAccidentsWithVictims"
+    },
+    "underAgeFiveMortalityRate" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#underAgeFiveMortalityRate"
+    },
+    "polycentricity" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#polycentricity"
+    },
+    "nuclear" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#nuclear"
+    },
+    "ownership1" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#ownership1"
+    },
+    "citizenRepresentation" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#citizenRepresentation"
+    },
+    "Crime" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Crime"
+    },
+    "steel" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#steel"
+    },
+    "youngPeopleEducation" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#youngPeopleEducation"
+    },
+    "tertiaryWastewaterTreatment" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#tertiaryWastewaterTreatment"
+    },
+    "rentBurdenedResidents" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#rentBurdenedResidents"
+    },
+    "energyConsumption" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#energyConsumption"
+    },
+    "heartAttackDeaths" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#heartAttackDeaths"
+    },
+    "commutingTime" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#commutingTime"
+    },
+    "institutional1" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#commercial/institutional1"
+    },
+    "housingAffordability" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#housingAffordability"
+    },
+    "marineFuel" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#marineFuel"
+    },
+    "numberOfCorruptionConvictions" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#numberOfCorruptionConvictions"
+    },
+    "schoolEnrollmentRate" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#schoolEnrollmentRate"
+    },
+    "roadDensity" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#roadDensity"
+    },
+    "populationDensity2" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#populationDensity2"
+    },
+    "diesel" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#diesel"
+    },
+    "own-SourceRevenues" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#own-SourceRevenues"
+    },
+    "improvedWaterAccess" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#improvedWaterAccess"
+    },
+    "femaleStudentEnrolment" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#femaleStudentEnrolment"
+    },
+    "full-timeEmployment" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#full-timeEmployment"
+    },
+    "noisePollution" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#noisePollution"
+    },
+    "dominantDistributor1" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#dominantDistributor1"
+    },
+    "totalElectricalUse" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#totalElectricalUse"
+    },
+    "gdp" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#gdp"
+    },
+    "jetFuel" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#jetFuel"
+    },
+    "highSchoolDropoutRate" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#highSchoolDropoutRate"
+    },
+    "solidWasteDisposalOnLand" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#solidWasteDisposalOnLand"
+    },
+    "populationDependencyRatio" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#populationDependencyRatio"
+    },
+    "youthUnemploymentRate" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#youthUnemploymentRate"
+    },
+    "suicideRate" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#suicideRate"
+    },
+    "soilUsage" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#soilUsage"
+    },
+    "cement" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#cement"
+    },
+    "normalizedDeficit" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#normalizedDeficit"
+    },
+    "o3Concentration" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#o3Concentration"
+    },
+    "homicideVictims" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#homicideVictims"
+    },
+    "incomeDistribution" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#incomeDistribution"
+    },
+    "numberOfElectricVehicles" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#numberOfElectricVehicles"
+    },
+    "numberOfFireRelatedDeaths" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#numberOfFireRelatedDeaths"
+    },
+    "Frameworks" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Frameworks"
+    },
+    "no2Concentration" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#no2Concentration"
+    },
+    "noWastewaterTreatment" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#noWastewaterTreatment"
+    },
+    "occupiedDwellings" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#occupiedDwellings"
+    },
+    "hazardousWasteGenerated" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#hazardousWasteGenerated"
+    },
+    "feedInTariffs" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#feedInTariffs"
+    },
+    "diabetesIncidences" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#diabetesIncidences"
+    },
+    "personsPerUnit" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#personsPerUnit"
+    },
+    "broadbandPenetration" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#broadbandPenetration"
+    },
+    "inflationRate" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#inflationRate"
+    },
+    "residentialSolidWasteCollection" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#residentialSolidWasteCollection"
+    },
+    "lifeExpectancy" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#lifeExpectancy"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Others_Env" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Others_Env"
+    },
+    "seniorPopulation" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#seniorPopulation"
+    },
+    "childPopulation" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#childPopulation"
+    },
+    "CO2" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#CO2"
+    },
+    "econimicalStructure" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#econimicalStructure"
+    },
+    "Sustainable_Indicators" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Sustainable_Indicators"
+    },
+    "SDG" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#SDG"
+    },
+    "indoorRecreationSpace" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#indoorRecreationSpace"
+    },
+    "coal" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#coal"
+    },
+    "numberOfFirefighters" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#numberOfFirefighters"
+    },
+    "otherIncentivesForRenewables" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#otherIncentivesForRenewables"
+    },
+    "seriousViolenceOffences" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#seriousViolenceOffences"
+    },
+    "independentRegulator" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#independentRegulator"
+    },
+    "employmentOfTheMetropolitanAreaAsAShareOfNationalValue" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#employmentOfTheMetropolitanAreaAsAShareOfNationalValue"
+    },
+    "UMI" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#UMI"
+    },
+    "unregisteredHouseholds" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#unregisteredHouseholds"
+    },
+    "taxesCollected" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#taxesCollected"
+    },
+    "totalPopulationOfTheMetropolitanArea" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#totalPopulationOfTheMetropolitanArea"
+    },
+    "persantageOfConsumptionFromDistrictSchemes" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#persantageOfConsumptionFromDistrictSchemes"
+    },
+    "primaryEducationCompletion" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#primaryEducationCompletion"
+    },
+    "numberOfAutomobiles" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#numberOfAutomobiles"
+    },
+    "metropolitanLandShareOfNationalValue" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#metropolitanLandShareOfNationalValue"
+    },
+    "Others_Soc" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Others_Soc"
+    },
+    "Sources" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Sources"
+    },
+    "participationInElectionsAndVoting" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#participationInElectionsAndVoting"
+    },
+    "wastewaterLoading" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#wastewaterLoading"
+    },
+    "lowIncomeTaxpayers" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#lowIncomeTaxpayers"
+    },
+    "ownership" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#ownership"
+    },
+    "buildingMaterials" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#buildingMaterials"
+    },
+    "unemploymentOECD" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#unemploymentOECD"
+    },
+    "gasoline" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#gasoline"
+    },
+    "IndustrialPropertyValues" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#commercial&IndustrialPropertyValues"
+    },
+    "annualPrecipitation" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#annualPrecipitation"
+    },
+    "independentRegulator2" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#independentRegulator2"
+    },
+    "disposalByBurningOpenly" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#disposalByBurningOpenly"
+    },
+    "wastewaterSubjectToTreatment" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#wastewaterSubjectToTreatment"
+    },
+    "urbanizedAreaUMI" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#urbanizedAreaUMI"
+    },
+    "numberOfMentalHealthPractitioners" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#numberOfMentalHealthPractitioners"
+    },
+    "Deaths" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Deaths"
+    },
+    "totalStudentEnrolment" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#totalStudentEnrolment"
+    },
+    "institutional" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#commercial/institutional"
+    },
+    "numberOfHomeless" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#numberOfHomeless"
+    },
+    "WaterAndLand" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#toxicReleaseInAir,WaterAndLand"
+    },
+    "labourMarket" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#labourMarket"
+    },
+    "violentCrimes" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#violentCrimes"
+    },
+    "commercialAirConnectivity" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#commercialAirConnectivity"
+    },
+    "treesPlanted" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#treesPlanted"
+    },
+    "airQuality" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#airQuality"
+    },
+    "totalLandArea" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#totalLandArea"
+    },
+    "absoluteUpwardMobility" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#absoluteUpwardMobility"
+    },
+    "populationLivingBelowTheNationalPovertyLine" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#populationLivingBelowTheNationalPovertyLine"
+    },
+    "infantMortality" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#infantMortality"
+    },
+    "hasFramework" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#hasFramework",
+      "@type" : "@id"
+    },
+    "numberOfElectricVehicleChargingPoints" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#numberOfElectricVehicleChargingPoints"
+    },
+    "cityLandArea" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#cityLandArea"
+    },
+    "modeShare" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#modeShare"
+    },
+    "off-siteSolar" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#off-siteSolar"
+    },
+    "cellPhoneConnections" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#cellPhoneConnections"
+    },
+    "Disposal" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#Disposal"
+    },
+    "waterRegulation" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#waterRegulation"
+    },
+    "waterProduction" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#waterProduction"
+    },
+    "carbonEmissions" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#carbonEmissions"
+    },
+    "racialSeggregation" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#racialSeggregation"
+    },
+    "numberOfLocalDistributors" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#numberOfLocalDistributors"
+    },
+    "costOfLiving" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#costOfLiving"
+    },
+    "so2Concentration" : {
+      "@id" : "http://www.semanticweb.org/sustainableindicators#so2Concentration"
+    }
+  }
+}
