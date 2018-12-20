@@ -1,0 +1,40 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:urbanisedArea" "base:totalCityPopulation" "base:voterParticipationRate" "base:totalWaterConsumption" "base:countryGDPPerCapita" "base:populationDensity2" "base:numberOfViolentCrimes" "base:publicFinance" "base:noisePollution" "base:schoolEnrollmentRate" "base:noise" "base:internetConnections" "base:climate" "base:waterConsumption" "base:unemploymentRate" "base:roadTrafficAccidentsWithVictims" "base:trafficDeaths" "base:violentCrimes" "base:gdpUMI" "base:youngPeopleEducation" "base:pM2.5AverageLevels" "base:cityLandArea" "base:greenAreaISO" "base:householdsWithoutAccessToPipedWaterAndSanitation" "base:greenArea" "base:debtServiceRatio" "base:seriousViolenceOffences" "base:noDirectWaterAccess" "base:patentApplications" "base:estimatedAverageExposureToAirPollution" "base:cO2EmissionsPerCapita" "base:landArea" "base:gdpPerCapita" "base:populationOfTheCityArea" "base:broadbandPenetration" "base:womenElectedToOffice" "base:womenInExecutivePositions" "base:unemploymentRate2" "base:income" "base:pctPatentApplications" "base:urbanizedAreaUMI" "base:labourMarket" "base:populationDensity" "base:greenOpenSpace" "base:participationInElectionsAndVoting" ; /*classes style*/
+	"base:estimatedAverageExposureToAirPollution" -> "base:pM2.5AverageLevels" [ label = "owl:equivalentClass" ];
+	"base:womenElectedToOffice" -> "base:womenInExecutivePositions" [ label = "owl:equivalentClass" ];
+	"base:cityLandArea" -> "base:urbanizedAreaUMI" [ label = "owl:equivalentClass" ];
+	"base:cityLandArea" -> "base:urbanisedArea" [ label = "owl:equivalentClass" ];
+	"base:populationOfTheCityArea" -> "base:totalCityPopulation" [ label = "owl:equivalentClass" ];
+	"base:gdpUMI" -> "base:income" [ label = "owl:equivalentClass" ];
+	"base:participationInElectionsAndVoting" -> "base:voterParticipationRate" [ label = "owl:equivalentClass" ];
+	"base:patentApplications" -> "base:pctPatentApplications" [ label = "owl:equivalentClass" ];
+	"base:seriousViolenceOffences" -> "base:violentCrimes" [ label = "owl:equivalentClass" ];
+	"base:schoolEnrollmentRate" -> "base:youngPeopleEducation" [ label = "owl:equivalentClass" ];
+	"base:householdsWithoutAccessToPipedWaterAndSanitation" -> "base:noDirectWaterAccess" [ label = "owl:equivalentClass" ];
+	"base:broadbandPenetration" -> "base:internetConnections" [ label = "owl:equivalentClass" ];
+	"base:labourMarket" -> "base:unemploymentRate2" [ label = "owl:equivalentClass" ];
+	"base:labourMarket" -> "base:unemploymentRate" [ label = "owl:equivalentClass" ];
+	"base:greenArea" -> "base:landArea" [ label = "owl:equivalentClass" ];
+	"base:greenArea" -> "base:greenOpenSpace" [ label = "owl:equivalentClass" ];
+	"base:greenArea" -> "base:greenAreaISO" [ label = "owl:equivalentClass" ];
+	"base:countryGDPPerCapita" -> "base:income" [ label = "owl:equivalentClass" ];
+	"base:countryGDPPerCapita" -> "base:gdpUMI" [ label = "owl:equivalentClass" ];
+	"base:countryGDPPerCapita" -> "base:gdpPerCapita" [ label = "owl:equivalentClass" ];
+	"base:totalWaterConsumption" -> "base:waterConsumption" [ label = "owl:equivalentClass" ];
+	"base:urbanisedArea" -> "base:urbanizedAreaUMI" [ label = "owl:equivalentClass" ];
+	"base:debtServiceRatio" -> "base:publicFinance" [ label = "owl:equivalentClass" ];
+	"base:roadTrafficAccidentsWithVictims" -> "base:trafficDeaths" [ label = "owl:equivalentClass" ];
+	"base:unemploymentRate" -> "base:unemploymentRate2" [ label = "owl:equivalentClass" ];
+	"base:noise" -> "base:noisePollution" [ label = "owl:equivalentClass" ];
+	"base:numberOfViolentCrimes" -> "base:violentCrimes" [ label = "owl:equivalentClass" ];
+	"base:numberOfViolentCrimes" -> "base:seriousViolenceOffences" [ label = "owl:equivalentClass" ];
+	"http://www.semanticweb.org/sustainableindicators" -> "http://www.semanticweb.org/sustainableindicators" [ label = "owl:versionIRI" ];
+	"base:populationDensity" -> "base:populationDensity2" [ label = "owl:equivalentClass" ];
+	"base:greenAreaISO" -> "base:greenOpenSpace" [ label = "owl:equivalentClass" ];
+	"base:cO2EmissionsPerCapita" -> "base:climate" [ label = "owl:equivalentClass" ];
+	"base:gdpPerCapita" -> "base:income" [ label = "owl:equivalentClass" ];
+	"base:gdpPerCapita" -> "base:gdpUMI" [ label = "owl:equivalentClass" ];
+
+}
