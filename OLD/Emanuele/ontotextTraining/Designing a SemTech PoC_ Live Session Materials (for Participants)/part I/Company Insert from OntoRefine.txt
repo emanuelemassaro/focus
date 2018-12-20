@@ -1,0 +1,34 @@
+PREFIX companies: <http://example.org/companies/>
+PREFIX spif: <http://spinrdf.org/spif#>
+
+CONSTRUCT {#graph <http://example.org/companies/> {
+	?idURI a companies:Company;
+		companies:rank ?Rank;
+		companies:name ?Company;
+		companies:industry ?Industry;
+		companies:RevenueUSDBillions ?RevenueUSDBillions;
+		companies:RevenueUSD ?RevenueUSD;
+		companies:RevenueGrowthPercent ?RevenueGrowthPercent;
+		companies:Employees ?Employees;
+		companies:Headquarters ?Headquarters;
+		companies:CEO ?CEO;
+		companies:Reference ?Reference;
+  		companies:CountryCode ?CountryCode1;
+  		companies:CountryCode ?CountryCode2.
+	#}
+} WHERE {
+			?s companies:rowNumber ?id.
+	  		?s companies:Rank ?Rank.
+			?s companies:Company ?Company.
+			?s companies:Industry ?Industry.
+			?s companies:RevenueUSDBillions ?RevenueUSDBillions.
+			?s companies:RevenueUSD ?RevenueUSD.
+			?s companies:RevenueGrowth_Percent_ ?RevenueGrowthPercent.
+			?s companies:Employees ?Employees.
+			?s companies:Headquarters ?Headquarters.
+			?s companies:CEO ?CEO.
+			?s companies:Reference ?Reference.
+	  		?s companies:CountryCode1 ?CountryCode1.
+			OPTIONAL {?s companies:CountryCode2 ?CountryCode2}.
+			BIND (spif:buildURI("<http://example.org/companies/{?1}>", ?id) as ?idURI)
+}LIMIT 100

@@ -1,0 +1,3404 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY schema "http://schema.org/#" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY gml "http://www.opengis.net/gml" >
+    <!ENTITY dct "http://purl.org/dc/terms/#" >
+    <!ENTITY vann "http://purl.org/vocab/vann/#" >
+    <!ENTITY time "http://www.w3.org/2006/time#" >
+    <!ENTITY dbpedia-owl "http://dbpedia.org/ontology#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY ssn "http://purl.oclc.org/NET/ssnx/ssn#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY citygml "http://www.opengis.net/citygml/2.0/" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY DUL "http://www.loa-cnr.it/ontologies/DUL.owl#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY otn "http://www.pms.ifi.lmu.de/rewerse-wga1/otn/OTN.owl" >
+]>
+
+
+<rdf:RDF xmlns="http://www.ontopolis.org/osmosys#"
+     xml:base="http://www.ontopolis.org/osmosys"
+     xmlns:dc="http://purl.org/dc/elements/1.1"
+     xmlns:dbpedia-owl="http://dbpedia.org/ontology#"
+     xmlns:citygml="http://www.opengis.net/citygml/2.0/"
+     xmlns:DUL="http://www.loa-cnr.it/ontologies/DUL.owl#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1"
+     xmlns:ssn="http://purl.oclc.org/NET/ssnx/ssn#"
+     xmlns:vann="http://purl.org/vocab/vann/#"
+     xmlns:schema="http://schema.org/#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:dct="http://purl.org/dc/terms/#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:gml="http://www.opengis.net/gml"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:otn="http://www.pms.ifi.lmu.de/rewerse-wga1/otn/OTN.owl">
+    <owl:Ontology rdf:about="http://www.ontopolis.org/osmosys">
+        <dct:subject rdf:datatype="&xsd;string">Ontology; Semantic Web; Smart Cities; OntoPolis; Urban Informatics; Urban Systems; Urban Models; Urban Knowledge Modeling; Decision-making; Urban Planning; Smart City Policies; Linked Data; Semantic Model; Knowledge Model; Semantic Data Integration</dct:subject>
+        <dct:description>The OSMoSys ontology constitutes a knowledge model for planning smart cities that enables the interconnection of urban domains and respective data sources with technology enablers. Its aim is to facilitate smart city policy-making, semantic interoperability and mutual interaction among city stakeholders (municipal authorities, urban planners, architects, decision-makers, citizens etc.) by defining the links among different urban systems, heterogeneous data sources and technological capabilities. OSMoSys models the city domains, data collection methods, urban data types and relevant technologies and also defines their mutual relations. It primarily forms an integral part of the OntoPolis urban platform, though it can independently be integrated in any urban planning and policy-making process towards smart cities.</dct:description>
+        <vann:preferredNamespacePrefix>osmosys</vann:preferredNamespacePrefix>
+        <dct:publisher xml:lang="en">Chair of Hyperbody, Faculty of Architecture and the Built Environment, Delft University of Technology (TU Delft)</dct:publisher>
+        <dct:identifier>http://www.ontopolis.org/osmosys</dct:identifier>
+        <dct:creator>Achilleas Psyllidis</dct:creator>
+        <dct:title>OSMoSys - the OntoPolis Semantic Modeling System</dct:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/#creator -->
+
+    <owl:AnnotationProperty rdf:about="&dct;creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/#description -->
+
+    <owl:AnnotationProperty rdf:about="&dct;description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/#identifier -->
+
+    <owl:AnnotationProperty rdf:about="&dct;identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/#publisher -->
+
+    <owl:AnnotationProperty rdf:about="&dct;publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/#source -->
+
+    <owl:AnnotationProperty rdf:about="&dct;source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/#subject -->
+
+    <owl:AnnotationProperty rdf:about="&dct;subject"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/#title -->
+
+    <owl:AnnotationProperty rdf:about="&dct;title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/#preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="&vann;preferredNamespacePrefix"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#detects -->
+
+    <owl:ObjectProperty rdf:about="&ssn;detects">
+        <rdfs:comment xml:lang="en">A relation from a sensor to the Stimulus that the sensor can detect.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Skeleton#Skeleton</rdfs:seeAlso>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loa-cnr.it/ontologies/DUL.owl#hasConstituent -->
+
+    <owl:ObjectProperty rdf:about="&DUL;hasConstituent">
+        <rdfs:comment xml:lang="en">&apos;Constituency&apos; depends on some layering of  the world described by the ontology. For example, scientific granularities (e.g. body-organ-tissue-cell) or ontological &apos;strata&apos; (e.g. social-mental-biological-physical) are  typical layerings. 
+Intuitively, a constituent is a part belonging to a lower layer. Since layering is actually a partition of the world described by the ontology, constituents are not properly classified as parts, although this kinship can be intuitive for common sense.
+A desirable advantage of this distinction is that we are able to talk e.g. of physical constituents of non-physical objects (e.g. systems), while this is not possible in terms of parts.
+Example of are the persons constituting a social system, the molecules constituting a person, the atoms constituting a river, etc. 
+In all these examples, we notice a typical discontinuity between the constituted and the constituent object: e.g. a social system is conceptualized at a different layer from the persons that constitute it, a person is conceptualized at a different layer from the molecules that constitute them, and a river is conceptualized at a different layer from the atoms that constitute it.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loa-cnr.it/ontologies/DUL.owl#hasParticipant -->
+
+    <owl:ObjectProperty rdf:about="&DUL;hasParticipant">
+        <rdfs:domain rdf:resource="&dct;Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent -->
+
+    <owl:ObjectProperty rdf:about="&DUL;includesEvent"/>
+    
+
+
+    <!-- http://www.loa-cnr.it/ontologies/DUL.owl#isParticipantIn -->
+
+    <owl:ObjectProperty rdf:about="&DUL;isParticipantIn">
+        <rdfs:range rdf:resource="&dct;Event"/>
+        <owl:inverseOf rdf:resource="&DUL;hasParticipant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#appliesStandards -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#appliesStandards"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#appliesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#appliesTo">
+        <owl:inverseOf rdf:resource="http://www.ontopolis.org/osmosys#subjectOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#atPlace -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#atPlace"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#attachedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#attachedTo"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#attachesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#attachesTo">
+        <owl:inverseOf rdf:resource="http://www.ontopolis.org/osmosys#attachedTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#consumes -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#consumes"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#contains"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#decisionMadeBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#decisionMadeBy"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#derivedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#derivedFrom"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#hasData -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#hasData"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#hasDocument -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#hasDocument"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#hasFeatureOfInterest -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#hasFeatureOfInterest"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#hasInput -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#hasInput"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#hasInterval -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#hasInterval"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#hasLocation"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#hasObject -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#hasObject"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#hasOutcome -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#hasOutcome">
+        <owl:inverseOf rdf:resource="http://www.ontopolis.org/osmosys#outcomeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#hasOutput -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#hasOutput">
+        <owl:inverseOf rdf:resource="http://www.ontopolis.org/osmosys#hasInput"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#hasOwner -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#hasOwner"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#hasPlatform -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#hasPlatform"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#hasProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#hasProcess"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#hasRoleIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#hasRoleIn"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#hasSampling -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#hasSampling"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#hasSemanticDataStandards -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#hasSemanticDataStandards"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#hasSensingMethod -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#hasSensingMethod"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#hasService -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#hasService"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#hasSubSystem -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#hasSubSystem"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#hasSyntacticDataStandards -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#hasSyntacticDataStandards"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#hasTechnologyEnabler -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#hasTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#hasTime"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#hasUrbanSystemData -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#hasUrbanSystemData"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#implementedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#implementedIn">
+        <owl:inverseOf rdf:resource="http://www.ontopolis.org/osmosys#implements"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#implements -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#implements"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#includes -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#includes"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#isAbout -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#isAbout"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#isConstituentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#isConstituentOf">
+        <owl:inverseOf rdf:resource="&DUL;hasConstituent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#isDistributedAcross -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#isDistributedAcross"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#isEmbeddedAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#isEmbeddedAt"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#isProducedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#isProducedBy">
+        <owl:inverseOf rdf:resource="http://www.ontopolis.org/osmosys#produces"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#isProducedFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#isProducedFor">
+        <owl:inverseOf rdf:resource="http://www.ontopolis.org/osmosys#isProducedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#isResponsibilityOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#isResponsibilityOf"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#isSubSystemOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#isSubSystemOf">
+        <owl:inverseOf rdf:resource="http://www.ontopolis.org/osmosys#hasSubSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#makesDecision -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#makesDecision"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#measuredBySensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#measuredBySensor"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#observedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#observedBy"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#outcomeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#outcomeOf"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#produces -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#produces"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#providedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#providedBy">
+        <owl:inverseOf rdf:resource="http://www.ontopolis.org/osmosys#provides"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#provides -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#provides"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#providesService -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#providesService"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#publishedAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#publishedAt"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#raisedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#raisedFrom"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#refersTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#refersTo"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#reliesOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#reliesOn"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#responsibleFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#responsibleFor">
+        <owl:inverseOf rdf:resource="http://www.ontopolis.org/osmosys#isResponsibilityOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#subjectOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#subjectOf"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#usedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#usedBy"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#usesItem -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontopolis.org/osmosys#usesItem"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.loa-cnr.it/ontologies/DUL.owl#hasDataValue -->
+
+    <owl:DatatypeProperty rdf:about="&DUL;hasDataValue"/>
+    
+
+
+    <!-- http://www.loa-cnr.it/ontologies/DUL.owl#hasEventDate -->
+
+    <owl:DatatypeProperty rdf:about="&DUL;hasEventDate">
+        <rdfs:domain rdf:resource="&dct;Event"/>
+        <rdfs:subPropertyOf rdf:resource="&DUL;hasDataValue"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.loa-cnr.it/ontologies/DUL.owl#hasIntervalDate -->
+
+    <owl:DatatypeProperty rdf:about="&DUL;hasIntervalDate">
+        <rdfs:subPropertyOf rdf:resource="&DUL;hasDataValue"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:domain rdf:resource="&time;DateTimeInterval"/>
+        <rdfs:domain rdf:resource="&time;Interval"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#hasAltitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontopolis.org/osmosys#hasAltitude">
+        <rdfs:domain rdf:resource="&ssn;SensingDevice"/>
+        <rdfs:domain rdf:resource="&ssn;Sensor"/>
+        <rdfs:domain rdf:resource="&ssn;SensorInput"/>
+        <rdfs:subPropertyOf rdf:resource="&DUL;hasDataValue"/>
+        <rdfs:domain rdf:resource="http://www.ontopolis.org/osmosys#SensorOutput"/>
+        <rdfs:domain rdf:resource="http://www.ontopolis.org/osmosys#SensorResource"/>
+        <rdfs:domain rdf:resource="http://www.ontopolis.org/osmosys#SensorSystem"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#hasID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontopolis.org/osmosys#hasID"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#hasLatitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontopolis.org/osmosys#hasLatitude">
+        <rdfs:domain rdf:resource="&ssn;SensingDevice"/>
+        <rdfs:domain rdf:resource="&ssn;Sensor"/>
+        <rdfs:domain rdf:resource="&ssn;SensorInput"/>
+        <rdfs:subPropertyOf rdf:resource="&DUL;hasDataValue"/>
+        <rdfs:domain rdf:resource="http://www.ontopolis.org/osmosys#SensorOutput"/>
+        <rdfs:domain rdf:resource="http://www.ontopolis.org/osmosys#SensorResource"/>
+        <rdfs:domain rdf:resource="http://www.ontopolis.org/osmosys#SensorSystem"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#hasLongitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontopolis.org/osmosys#hasLongitude">
+        <rdfs:domain rdf:resource="&ssn;SensingDevice"/>
+        <rdfs:domain rdf:resource="&ssn;Sensor"/>
+        <rdfs:domain rdf:resource="&ssn;SensorInput"/>
+        <rdfs:subPropertyOf rdf:resource="&DUL;hasDataValue"/>
+        <rdfs:domain rdf:resource="http://www.ontopolis.org/osmosys#SensorOutput"/>
+        <rdfs:domain rdf:resource="http://www.ontopolis.org/osmosys#SensorResource"/>
+        <rdfs:domain rdf:resource="http://www.ontopolis.org/osmosys#SensorSystem"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/City -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/City">
+        <rdfs:subClassOf rdf:resource="http://schema.org/AdministrativeArea"/>
+        <rdfs:comment xml:lang="en">A relatively large and permanent settlement, particularly a large urban settlement</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest -->
+
+    <owl:Class rdf:about="&ssn;FeatureOfInterest">
+        <rdfs:subClassOf rdf:resource="&dct;Event"/>
+        <rdfs:comment xml:lang="en">A FeatureOfInterest is an abstraction of real world phenomena (thing, person, event, etc).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#Observation -->
+
+    <owl:Class rdf:about="&ssn;Observation">
+        <rdfs:subClassOf rdf:resource="&DUL;Situation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTime"/>
+                <owl:allValuesFrom rdf:resource="&time;TemporalEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasFeatureOfInterest"/>
+                <owl:onClass rdf:resource="&ssn;FeatureOfInterest"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DUL;includesEvent"/>
+                <owl:someValuesFrom rdf:resource="&ssn;Stimulus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasFeatureOfInterest"/>
+                <owl:allValuesFrom rdf:resource="&ssn;FeatureOfInterest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#observedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SensorResource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An Observation is a Situation in which a Sensing method has been used to estimate or calculate a value of a FeatureOfInterest. Links to Sensing and SensorResources describe what made the Observation and how; links to FeatureOfInterest detail what was sensed; the result is the output of a SensorResource; other metadata details times etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#Platform -->
+
+    <owl:Class rdf:about="&ssn;Platform">
+        <rdfs:subClassOf rdf:resource="&dct;PhysicalObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="http://schema.org/Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#attachesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SensorResource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.ontopolis.org/osmosys#SocialMediaPlatform"/>
+        <rdfs:comment xml:lang="en">A PhysicalObject to which other PhysicalObjects can be attached - particuarly Sensors and other Platforms. For example, a post might act as the Platform, a bouy might act as a Platform, or a fish might act as a Platform for an attached sensor.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#Process -->
+
+    <owl:Class rdf:about="&ssn;Process">
+        <rdfs:subClassOf rdf:resource="&DUL;Method"/>
+        <dct:source>http://www.w3.org/2005/Incubator/ssn/</dct:source>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Model#Process</rdfs:seeAlso>
+        <rdfs:comment xml:lang="en">A process has an output and possibly inputs and, for a composite process, describes the temporal and dataflow dependencies and relationships amongst its parts.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#Sensing -->
+
+    <owl:Class rdf:about="&ssn;Sensing">
+        <rdfs:subClassOf rdf:resource="&ssn;Process"/>
+        <dct:source>http://www.w3.org/2005/Incubator/ssn/</dct:source>
+        <rdfs:comment xml:lang="en">Sensing is a process that results in the estimation, or calculation, of the value of a phenomenon.</rdfs:comment>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Skeleton#Skeleton</rdfs:seeAlso>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#SensingDevice -->
+
+    <owl:Class rdf:about="&ssn;SensingDevice">
+        <rdfs:subClassOf rdf:resource="&ssn;Sensor"/>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#Measuring</rdfs:seeAlso>
+        <dct:source>http://www.w3.org/2005/Incubator/ssn/</dct:source>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">A sensing device is a device that implements sensing.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#Sensor -->
+
+    <owl:Class rdf:about="&ssn;Sensor">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#SensorResource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#implements"/>
+                <owl:someValuesFrom rdf:resource="&ssn;Sensing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ssn;detects"/>
+                <owl:allValuesFrom rdf:resource="&ssn;Stimulus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A sensor can do (implements) sensing: that is, a sensor is any entity that can follow a sensing method and thus observe some Property of a FeatureOfInterest.  Sensors may be physical devices, computational methods, a laboratory setup with a person following a method, a person or any other thing that can follow a Sensing Method to observe a Property.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Skeleton#Skeleton</rdfs:seeAlso>
+        <dct:source>skos:exactMatch &apos;sensor&apos; [SensorML OGC-0700]
+http://www.opengeospatial.org/standards/sensorml 
+
+skos:closeMatch &apos;observation procedure&apos; [O&amp;M] 
+http://www.opengeospatial.org/standards/om 
+
+O&amp;M allows sensors, methods, instruments, systems, algorithms and process chains as the processUsed of an observation; this ontology allows a similar range of things (any thing that can do sensing), just they are all grouped under the term sensor (which is thus wider than the O&amp;M concept).</dct:source>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#SensorInput -->
+
+    <owl:Class rdf:about="&ssn;SensorInput">
+        <owl:equivalentClass rdf:resource="&ssn;Stimulus"/>
+        <rdfs:subClassOf rdf:resource="&dct;Event"/>
+        <rdfs:subClassOf rdf:resource="&DUL;InformationObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTime"/>
+                <owl:allValuesFrom rdf:resource="&time;TemporalEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasSampling"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#DynamicSampling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#refersTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystems"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.ontopolis.org/osmosys#SensorOutput"/>
+        <dct:source>http://www.w3.org/2005/Incubator/ssn/</dct:source>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Skeleton#Skeleton</rdfs:seeAlso>
+        <rdfs:comment xml:lang="en">An Event in the real world that &apos;triggers&apos; a Sensor. The properties associated to the stimulus may be different to eventual observed property. It is the Event that triggers the sensor.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#Stimulus -->
+
+    <owl:Class rdf:about="&ssn;Stimulus">
+        <rdfs:subClassOf rdf:resource="&dct;Event"/>
+        <dct:source>http://www.w3.org/2005/Incubator/ssn/</dct:source>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Skeleton#Skeleton</rdfs:seeAlso>
+        <rdfs:comment xml:lang="en">An Event in the real world that &apos;triggers&apos; a Sensor. The properties associated to the stimulus may be different to eventual observed property. It is the Event that triggers the sensor.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/#Event -->
+
+    <owl:Class rdf:about="&dct;Event">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DUL;hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="&foaf;/Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#atPlace"/>
+                <owl:someValuesFrom rdf:resource="http://schema.org/Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DUL;hasEventDate"/>
+                <owl:someValuesFrom rdf:resource="&xsd;dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DUL;hasConstituent"/>
+                <owl:allValuesFrom rdf:resource="&dct;Event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasOutcome"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#Decision"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso>http://dbpedia.org/ontology/Event</rdfs:seeAlso>
+        <rdfs:comment xml:lang="en">A non-persistent, time-based occurrence.</rdfs:comment>
+        <dct:description xml:lang="en">An Event can refer to a number of Items that take roles in the Event, for example, a Person may take the role of applicant, in one Event, and the same person may take the role of patient, in another Event.</dct:description>
+        <dct:source>British Standards Institution. (2014). PAS 182: Smart City Concept Model - Guide to Establishing a Model for Data Interoperability. London: BSI Standards Limited.</dct:source>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/#PhysicalObject -->
+
+    <owl:Class rdf:about="&dct;PhysicalObject">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Item"/>
+        <owl:disjointWith rdf:resource="http://www.ontopolis.org/osmosys#WebEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/AdministrativeArea -->
+
+    <owl:Class rdf:about="http://schema.org/AdministrativeArea">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+        <rdfs:comment xml:lang="en">A geographical region under the jurisdiction of a particular government.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Place -->
+
+    <owl:Class rdf:about="http://schema.org/Place">
+        <dct:description xml:lang="en">A Place might have definite or indefinite boundaries. Geographic spaces can be a position, line, area, or volume.</dct:description>
+        <rdfs:comment xml:lang="en">A geographic or virtual part of space.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loa-cnr.it/ontologies/DUL.owl#Action -->
+
+    <owl:Class rdf:about="&DUL;Action">
+        <rdfs:subClassOf rdf:resource="&dct;Event"/>
+        <rdfs:comment xml:lang="en">An Event with at least one Agent that isParticipantIn it, and that executes a Task that typically isDefinedIn a Plan, Workflow, Project, etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loa-cnr.it/ontologies/DUL.owl#CollectiveAgent -->
+
+    <owl:Class rdf:about="&DUL;CollectiveAgent">
+        <rdfs:subClassOf rdf:resource="&foaf;/Agent"/>
+        <rdfs:comment xml:lang="en">A SocialAgent that is actedBy Agents that are (and act as) members of a Collective. A collective agent can have roles that are also roles of those agents.
+For example, in sociology, a &apos;group action&apos; is the situation in which a number of people (that result to be members of a collective) in a given area behave in a coordinated way in order to achieve a (often common) goal. The Agent in such a Situation is not single, but a CollectiveAgent (a Group). This can be generalized to the notion of social movement, which assumes a large Community or even the entire Society as agents.
+The difference between a CollectiveAgent and an Organization is that a Description that introduces a CollectiveAgent is also one that unifies the corresponding Collective. In practice, this difference makes collective agents &apos;less stable&apos; than organizations, because they have a dedicated, publicly recognizable Description that is conceived to introduce them.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loa-cnr.it/ontologies/DUL.owl#Community -->
+
+    <owl:Class rdf:about="&DUL;Community">
+        <rdfs:subClassOf rdf:resource="&DUL;CollectiveAgent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject -->
+
+    <owl:Class rdf:about="&DUL;InformationObject">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loa-cnr.it/ontologies/DUL.owl#Method -->
+
+    <owl:Class rdf:about="&DUL;Method">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#implementedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#Service"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A method is a Description that defines or uses concepts in order to guide carrying out actions aimed at a solution with respect to a problem. 
+It is different from a Plan, because plans could be carried out in order to follow a method, but a method can be followed by executing alternative plans.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loa-cnr.it/ontologies/DUL.owl#Situation -->
+
+    <owl:Class rdf:about="&DUL;Situation"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#AmbientSensing -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#AmbientSensing">
+        <rdfs:label xml:lang="en">Ambient Sensing</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#includes"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SensorResource"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#isEmbeddedAt"/>
+                        <owl:someValuesFrom rdf:resource="http://schema.org/Place"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSensing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#isAbout"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystems"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Existing sensor networks distributed throughout an urban environment.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#BuiltEnvironment -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#BuiltEnvironment">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystems"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Healthcare"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#PolicingAndEmergency"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#PublicSafety"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#SocialServices"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Telecommunications"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Transport"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Waste"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Water"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasService"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#EnvironmentalServices"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Connectivity"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DataAnalytics"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DataManagement"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#InstrumentationAndMonitoring"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Interoperability"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#SecurityAndPrivacy"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#ComputingResources"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#isSubSystemOf"/>
+                <owl:someValuesFrom rdf:resource="http://dbpedia.org/ontology/City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SmartCityTechnologyEnablers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasProcess"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#KeyCrossCityProcesses"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#measuredBySensor"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SensorResource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasData"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#BuiltEnvironmentData"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dct:source>Berst, Jesse. (2014). Smart Cities Readiness Guide. Smart Cities Council</dct:source>
+        <rdfs:comment xml:lang="en">BuiltEnvironment refers to all of a city’s buildings, parks and public spaces. Certain components of the BuiltEnvironment – including streets and utility infrastructure – are not emphasized here because they are treated in other responsibilities (Transport and Energy).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#BuiltEnvironmentData -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#BuiltEnvironmentData">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Semi-StaticSampling"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystemsData"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasOwner"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#Municipality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#BusinessManagement -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#BusinessManagement">
+        <rdfs:label xml:lang="en">Business Management</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#GovernanceAndDeliveryProcesses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#Case -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#Case">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#atPlace"/>
+                <owl:someValuesFrom rdf:resource="http://schema.org/Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#raisedFrom"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#Service"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#contains"/>
+                <owl:someValuesFrom rdf:resource="&dct;Event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A container for information recording the history of Events initiated by a Service demand.</rdfs:comment>
+        <dct:source>British Standards Institution. (2014). PAS 182: Smart City Concept Model - Guide to Establishing a Model for Data Interoperability. London: BSI Standards Limited.</dct:source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#CityEvents -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#CityEvents">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Leisure"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasFeatureOfInterest"/>
+                <owl:allValuesFrom rdf:resource="&ssn;FeatureOfInterest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#ComputingResources -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#ComputingResources">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#SmartCityTechnologyEnablers"/>
+        <dct:source>Berst, Jesse. (2014). Smart Cities Readiness Guide. Smart Cities Council</dct:source>
+        <rdfs:comment xml:lang="en">Computing resources include 1) the computer “brains” themselves, 2) storage of data and 3) special capabilities needed for smart cities.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#Connectivity -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#Connectivity">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#SmartCityTechnologyEnablers"/>
+        <dct:source>Berst, Jesse. (2014). Smart Cities Readiness Guide. Smart Cities Council</dct:source>
+        <rdfs:comment xml:lang="en">Connectivity is how the smart city’s devices communicate with each other. Connectivity ensures that data gets from where it is collected to where it is
+analyzed and used. Examples include citywide WiFi networks, RF mesh networks and cellular networks. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#Crowdsourcing -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#Crowdsourcing">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSensing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#isAbout"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystems"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#derivedFrom"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SocialMediaPlatform"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#CulturalGroups -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#CulturalGroups">
+        <rdfs:subClassOf rdf:resource="&foaf;/Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#DSNs -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#DSNs">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#isDistributedAcross"/>
+                        <owl:someValuesFrom rdf:resource="http://schema.org/Place"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#includes"/>
+                        <owl:onClass rdf:resource="http://www.ontopolis.org/osmosys#SensorNetwork"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSensing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#isAbout"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystems"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#atPlace"/>
+                <owl:someValuesFrom rdf:resource="http://schema.org/Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Distributed Sensor Networks</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#DataAnalytics -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#DataAnalytics">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#SmartCityTechnologyEnablers"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#reliesOn"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#ComputingResources"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#appliesStandards"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SemanticDataStandards"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#appliesStandards"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SyntacticDataStandards"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dct:source>Berst, Jesse. (2014). Smart Cities Readiness Guide. Smart Cities Council</dct:source>
+        <rdfs:comment xml:lang="en">Analytics create value from the data that instrumentation provides.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#DataManagement -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#DataManagement">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#SmartCityTechnologyEnablers"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#reliesOn"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#ComputingResources"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dct:source>Berst, Jesse. (2014). Smart Cities Readiness Guide. Smart Cities Council</dct:source>
+        <rdfs:comment xml:lang="en">Data management is the process of storing, protecting and processing data while guaranteeing its accuracy, accessibility, reliability and timeliness.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#Decision -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#Decision">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#appliesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#Item"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#decisionMadeBy"/>
+                <owl:someValuesFrom rdf:resource="&foaf;/Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#outcomeOf"/>
+                <owl:someValuesFrom rdf:resource="&dct;Event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dct:source>British Standards Institution. (2014). PAS 182: Smart City Concept Model - Guide to Establishing a Model for Data Interoperability. London: BSI Standards Limited.</dct:source>
+        <rdfs:comment xml:lang="en">A conclusion or resolution reached after consideration</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#DynamicSampling -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#DynamicSampling">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Sampling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#EducationAndTraining -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#EducationAndTraining">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#BuiltEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#Energy -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#Energy">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystems"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasData"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#EnergyData"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Connectivity"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DataAnalytics"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DataManagement"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#InstrumentationAndMonitoring"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Interoperability"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#SecurityAndPrivacy"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#ComputingResources"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#isSubSystemOf"/>
+                <owl:someValuesFrom rdf:resource="http://dbpedia.org/ontology/City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#SocialServices"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Telecommunications"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Transport"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Waste"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Water"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#isProducedFor"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#BuiltEnvironment"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SmartCityTechnologyEnablers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasProcess"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#KeyCrossCityProcesses"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#measuredBySensor"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SensorResource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dct:source>Berst, Jesse. (2014). Smart Cities Readiness Guide. Smart Cities Council</dct:source>
+        <rdfs:comment xml:lang="en">The infrastructure to produce and deliver energy, primarily electricity and gas.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#EnergyData -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#EnergyData">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystemsData"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasOwner"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#EnvironmentalAgency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasSampling"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#DynamicSampling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#Environment -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#Environment">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystems"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#measuredBySensor"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SensorResource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasProcess"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#KeyCrossCityProcesses"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SmartCityTechnologyEnablers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Connectivity"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DataAnalytics"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DataManagement"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#InstrumentationAndMonitoring"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Interoperability"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#SecurityAndPrivacy"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#ComputingResources"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#isSubSystemOf"/>
+                <owl:someValuesFrom rdf:resource="http://dbpedia.org/ontology/City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasData"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#EnvironmentalData"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#EnvironmentalAgency -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#EnvironmentalAgency">
+        <rdfs:subClassOf rdf:resource="&foaf;/Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#EnvironmentalData -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#EnvironmentalData">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystemsData"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasSampling"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#DynamicSampling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasOwner"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#EnvironmentalAgency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#EnvironmentalServices -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#EnvironmentalServices">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Service"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SmartCityTechnologyEnablers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Connectivity"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DataAnalytics"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DataManagement"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#InstrumentationAndMonitoring"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Interoperability"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#SecurityAndPrivacy"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#ComputingResources"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasProcess"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#KeyCrossCityProcesses"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasData"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#EnvironmentalData"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#isSubSystemOf"/>
+                <owl:someValuesFrom rdf:resource="http://dbpedia.org/ontology/City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#measuredBySensor"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SensorResource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#FinanceAndEconomy -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#FinanceAndEconomy">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystems"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Connectivity"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DataAnalytics"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DataManagement"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#InstrumentationAndMonitoring"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Interoperability"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#SecurityAndPrivacy"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#ComputingResources"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SmartCityTechnologyEnablers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasProcess"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#KeyCrossCityProcesses"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#isSubSystemOf"/>
+                <owl:someValuesFrom rdf:resource="http://dbpedia.org/ontology/City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasData"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#FinanceAndEconomyData"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#FinanceAndEconomyData -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#FinanceAndEconomyData">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#DynamicSampling"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystemsData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#GovernanceAndDeliveryProcesses -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#GovernanceAndDeliveryProcesses">
+        <rdfs:label xml:lang="en">Governance and Delivery Processes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#KeyCrossCityProcesses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#Healthcare -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#Healthcare">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Service"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystems"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasProcess"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#KeyCrossCityProcesses"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasData"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#HealthcareData"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SmartCityTechnologyEnablers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#isSubSystemOf"/>
+                <owl:someValuesFrom rdf:resource="http://dbpedia.org/ontology/City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dct:source>Berst, Jesse. (2014). Smart Cities Readiness Guide. Smart Cities Council</dct:source>
+        <rdfs:comment xml:lang="en">The essential human services for the provision of Healthcare, education and SocialServices.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#HealthcareAgency -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#HealthcareAgency">
+        <rdfs:subClassOf rdf:resource="&foaf;/Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#HealthcareData -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#HealthcareData">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystemsData"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasOwner"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#HealthcareAgency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasSampling"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DynamicSampling"/>
+                            <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Semi-StaticSampling"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#Housing -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#Housing">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#BuiltEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#HumanSensor -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#HumanSensor">
+        <owl:equivalentClass rdf:resource="&foaf;/Person"/>
+        <rdfs:subClassOf rdf:resource="&ssn;Sensor"/>
+        <rdfs:isDefinedBy>http://www.ontopolis.org/osmosys</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">A Person that reacts to Stimuli and/or Events and occasionally makes observations about the physical world. SocialMedia constitute valuable resources for such observations and can be crawled using Crowd-sensing techniques.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#InstrumentationAndMonitoring -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#InstrumentationAndMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#SmartCityTechnologyEnablers"/>
+        <dct:source>Berst, Jesse. (2014). Smart Cities Readiness Guide. Smart Cities Council</dct:source>
+        <rdfs:comment xml:lang="en">&quot;Instrumentation and monitoring is how a smart city monitors and controls conditions. Instrumentation provides the eyes and ears of a smart city. Examples include smart meters for electricity, water and gas; air quality sensors; closed circuit TV and video monitors and roadway sensors. Control systems provide remote management capabilities. Examples include switches, breakers and other devices that let operators control from afar&quot;.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#Interoperability -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#Interoperability">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#PolicyInteroperability"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#SyntacticInteroperability"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#LegalInteroperability"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#TechnicalInteroperability"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#OrganizationalInteroperability"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#SemanticInteroperability"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#SmartCityTechnologyEnablers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#Item -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#Item">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#atPlace"/>
+                <owl:someValuesFrom rdf:resource="http://schema.org/Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasDocument"/>
+                <owl:allValuesFrom rdf:resource="&foaf;/Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasRoleIn"/>
+                <owl:someValuesFrom rdf:resource="&dct;Event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#subjectOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#Decision"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasRoleIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#Case"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dct:source>British Standards Institution. (2014). PAS 182: Smart City Concept Model - Guide to Establishing a Model for Data Interoperability. London: BSI Standards Limited.</dct:source>
+        <rdfs:comment xml:lang="en">An individual article or unit, especially one that is part of a list, collection, or set.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#KeyCrossCityProcesses -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#KeyCrossCityProcesses">
+        <rdfs:subClassOf rdf:resource="&ssn;Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#LegalInteroperability -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#LegalInteroperability">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Interoperability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#Leisure -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#Leisure">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Service"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystems"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#isSubSystemOf"/>
+                <owl:someValuesFrom rdf:resource="http://dbpedia.org/ontology/City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasData"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#LeisureData"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Connectivity"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DataAnalytics"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DataManagement"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#InstrumentationAndMonitoring"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Interoperability"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#SecurityAndPrivacy"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#ComputingResources"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SmartCityTechnologyEnablers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasProcess"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#KeyCrossCityProcesses"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#LeisureData -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#LeisureData">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystemsData"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasSampling"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#Semi-StaticSampling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasOwner"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#CulturalGroups"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#Municipality -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#Municipality">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#PublicAdministration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#OGC_SWE_Standards -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#OGC_SWE_Standards">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#O&amp;M"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#SensorML"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#EML"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#SWECommon"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#SyntacticDataStandards"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#appliesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SensorData"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Open Geospatial Consortium - Sensor Web Enablement Standards</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#OrganizationalInteroperability -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#OrganizationalInteroperability">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Interoperability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#PolicingAndEmergency -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#PolicingAndEmergency">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Service"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystems"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasData"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#PolicingAndEmergencyData"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SmartCityTechnologyEnablers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Connectivity"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DataAnalytics"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DataManagement"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#InstrumentationAndMonitoring"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Interoperability"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#SecurityAndPrivacy"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#ComputingResources"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasProcess"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#KeyCrossCityProcesses"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#isSubSystemOf"/>
+                <owl:someValuesFrom rdf:resource="http://dbpedia.org/ontology/City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#PolicingAndEmergencyData -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#PolicingAndEmergencyData">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Semi-StaticSampling"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystemsData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#PolicyInteroperability -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#PolicyInteroperability">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Interoperability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#PublicAdministration -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#PublicAdministration">
+        <rdfs:subClassOf rdf:resource="&foaf;/Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#PublicSafety -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#PublicSafety">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Service"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystems"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#isSubSystemOf"/>
+                <owl:someValuesFrom rdf:resource="http://dbpedia.org/ontology/City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasProcess"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#KeyCrossCityProcesses"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasData"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#PublicSafetyData"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Connectivity"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DataAnalytics"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DataManagement"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#InstrumentationAndMonitoring"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Interoperability"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#SecurityAndPrivacy"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#ComputingResources"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SmartCityTechnologyEnablers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dct:source>Berst, Jesse. (2014). Smart Cities Readiness Guide. Smart Cities Council</dct:source>
+        <rdfs:comment xml:lang="en">The infrastructure, agencies and personnel to keep citizens safe. Examples include police and fire departments, emergency and disaster prevention
+and management agencies, courts and corrections facilities.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#PublicSafetyData -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#PublicSafetyData">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Semi-StaticSampling"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystemsData"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasOwner"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#Municipality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#Sampling -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#Sampling"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#SecurityAndPrivacy -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#SecurityAndPrivacy">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#SmartCityTechnologyEnablers"/>
+        <dct:source>Berst, Jesse. (2014). Smart Cities Readiness Guide. Smart Cities Council</dct:source>
+        <rdfs:comment xml:lang="en">Security and privacy are technologies, policies and practices that safeguard data, privacy and physical assets. Examples include the publishing of clear privacy rules and the implementation of a cybersecurity system. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#SemanticDataStandards -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#SemanticDataStandards">
+        <rdfs:label>Semantic Data Standards</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#SemanticInteroperability"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#appliesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SocialWebData"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#appliesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SensorData"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#appliesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SocialData"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#SemanticInteroperability -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#SemanticInteroperability">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Interoperability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#Semi-StaticSampling -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#Semi-StaticSampling">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Sampling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#SensorData -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#SensorData">
+        <rdfs:subClassOf rdf:resource="&DUL;InformationObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasSyntacticDataStandards"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SyntacticDataStandards"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasSemanticDataStandards"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SemanticDataStandards"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#appliesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#DataAnalytics"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#isProducedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SensorNetwork"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#isProducedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SensorResource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasSampling"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#DynamicSampling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTime"/>
+                <owl:allValuesFrom rdf:resource="&time;TemporalEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#refersTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystems"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#SensorNetwork -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#SensorNetwork">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#contains"/>
+                <owl:onClass rdf:resource="http://www.ontopolis.org/osmosys#SensorResource"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&dct;PhysicalObject"/>
+        <rdfs:isDefinedBy>http://www.ontopolis.org/osmosys</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">A sensor network consists of a number of spatially distributed and communicating SensorResources.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#SensorOutput -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#SensorOutput">
+        <rdfs:subClassOf rdf:resource="&DUL;InformationObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTime"/>
+                <owl:allValuesFrom rdf:resource="&time;TemporalEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#isProducedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SensorResource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasSampling"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#DynamicSampling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Skeleton#Skeleton</rdfs:seeAlso>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">A sensor outputs a piece of information (an observed value).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#SensorResource -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#SensorResource">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ssn;Sensor"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#SensorSystem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#SensorNetwork"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#produces"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SensorOutput"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasInput"/>
+                <owl:someValuesFrom rdf:resource="&ssn;SensorInput"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#implements"/>
+                <owl:someValuesFrom rdf:resource="&ssn;Sensing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Crowdsourcing"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DSNs"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasSensingMethod"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#AmbientSensing"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasInterval"/>
+                <owl:someValuesFrom rdf:resource="&time;DateTimeInterval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasOutput"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SensorOutput"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasPlatform"/>
+                <owl:someValuesFrom rdf:resource="&ssn;Platform"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="http://schema.org/Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ssn;detects"/>
+                <owl:allValuesFrom rdf:resource="&ssn;Stimulus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Sensor or a SensorSystem may be abstracted as a sensor resource.</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.ontopolis.org/osmosys</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#SensorSystem -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#SensorSystem">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#SensorResource"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#attachedTo"/>
+                        <owl:someValuesFrom rdf:resource="&ssn;Platform"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#SensorResource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ssn;detects"/>
+                <owl:allValuesFrom rdf:resource="&ssn;Stimulus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasInterval"/>
+                <owl:someValuesFrom rdf:resource="&time;DateTimeInterval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#implements"/>
+                <owl:someValuesFrom rdf:resource="&ssn;Sensing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>http://www.ontopolis.org/osmosys</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">A sensor system is an aggregation of Sensors, attached to a single platform. Examples are a weather station with attached sensors, or a combination of heart frequency and blood pressure sensors carried by a human or animal.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#SensorWeb -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#SensorWeb">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#WebEntity"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#includes"/>
+                                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SensorNetwork"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#includes"/>
+                                <owl:onClass rdf:resource="http://www.ontopolis.org/osmosys#SensorResource"/>
+                                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#reliesOn"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#Connectivity"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#WebEntity"/>
+        <rdfs:comment xml:lang="en">A SensorWeb comprises web accessible sensor networks and archived sensor data that can be discovered and accessed using standard protocols and application programming interfaces.</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.ontopolis.org/osmosys</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#Service -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#Service">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Item"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#implements"/>
+                <owl:someValuesFrom rdf:resource="&DUL;Method"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#usedBy"/>
+                <owl:someValuesFrom rdf:resource="&foaf;/Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#usedBy"/>
+                <owl:someValuesFrom rdf:resource="&foaf;/Group"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#usedBy"/>
+                <owl:someValuesFrom rdf:resource="&foaf;/Organization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#providedBy"/>
+                <owl:someValuesFrom rdf:resource="&foaf;/Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#isResponsibilityOf"/>
+                <owl:someValuesFrom rdf:resource="&foaf;/Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dct:source>British Standards Institution. (2014). PAS 182: Smart City Concept Model - Guide to Establishing a Model for Data Interoperability. London: BSI Standards Limited.</dct:source>
+        <rdfs:comment xml:lang="en">A system that provides one or more functions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#ServiceManagement -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#ServiceManagement">
+        <rdfs:label xml:lang="en">Service Management</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#GovernanceAndDeliveryProcesses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#SmartCityTechnologyEnablers -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#SmartCityTechnologyEnablers">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Technologies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#SocialData -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#SocialData">
+        <rdfs:subClassOf rdf:resource="&DUL;InformationObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#isProducedBy"/>
+                <owl:allValuesFrom rdf:resource="&foaf;/Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#appliesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#DataAnalytics"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasSampling"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Semi-StaticSampling"/>
+                            <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#StaticSampling"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#refersTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystems"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.ontopolis.org/osmosys#SocialWebData"/>
+        <rdfs:comment xml:lang="en">SocialData in OSMoSys refer to urban data from census records, demographics, administrative records, spatial statistics etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#SocialMediaPlatform -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#SocialMediaPlatform">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Foursquare"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Twitter"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Instagram"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#RenRen"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#QQ"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Facebook"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#SinaWeibo"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#WebEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#SocialServices -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#SocialServices">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Service"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystems"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasProcess"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#KeyCrossCityProcesses"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#isSubSystemOf"/>
+                <owl:someValuesFrom rdf:resource="http://dbpedia.org/ontology/City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Connectivity"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DataAnalytics"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DataManagement"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#InstrumentationAndMonitoring"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Interoperability"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#SecurityAndPrivacy"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#ComputingResources"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasData"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SocialServicesData"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SmartCityTechnologyEnablers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#SocialServicesData -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#SocialServicesData">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystemsData"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasSampling"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Semi-StaticSampling"/>
+                            <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#StaticSampling"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasOwner"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#Municipality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#SocialWebData -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#SocialWebData">
+        <rdfs:subClassOf rdf:resource="&DUL;InformationObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTime"/>
+                <owl:allValuesFrom rdf:resource="&time;TemporalEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#publishedAt"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SocialMediaPlatform"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasSampling"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DynamicSampling"/>
+                            <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Semi-StaticSampling"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#appliesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#DataAnalytics"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#isProducedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#HumanSensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#refersTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystems"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#StaticSampling -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#StaticSampling">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Sampling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#SyntacticDataStandards -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#SyntacticDataStandards">
+        <rdfs:label>Syntactic Data Standards</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#SyntacticInteroperability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#SyntacticInteroperability -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#SyntacticInteroperability">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Interoperability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#TechnicalInteroperability -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#TechnicalInteroperability">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Interoperability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#Technologies -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#Technologies"/>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#TechnologyAndDataAssetManagement -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#TechnologyAndDataAssetManagement">
+        <rdfs:label xml:lang="en">Technology and Data Asset Management</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#GovernanceAndDeliveryProcesses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#TelecomProvider -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#TelecomProvider">
+        <rdfs:subClassOf rdf:resource="&foaf;/Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#Telecommunications -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#Telecommunications">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystems"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasProcess"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#KeyCrossCityProcesses"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Connectivity"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DataAnalytics"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DataManagement"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#InstrumentationAndMonitoring"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Interoperability"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#SecurityAndPrivacy"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#ComputingResources"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SmartCityTechnologyEnablers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#isSubSystemOf"/>
+                <owl:someValuesFrom rdf:resource="http://dbpedia.org/ontology/City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasData"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#TelecommunicationsData"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Telecommunications refers to communications for people and businesses. OSMoSys uses Connectivity to refer to communications for devices.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#TelecommunicationsData -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#TelecommunicationsData">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystemsData"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasOwner"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#TelecomProvider"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasSampling"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#DynamicSampling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#Tourism -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#Tourism">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystems"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SmartCityTechnologyEnablers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasProcess"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#KeyCrossCityProcesses"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Connectivity"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DataAnalytics"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DataManagement"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#InstrumentationAndMonitoring"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Interoperability"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#SecurityAndPrivacy"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#ComputingResources"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasData"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#TourismData"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#TourismData -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#TourismData">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Semi-StaticSampling"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystemsData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#TrafficAgency -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#TrafficAgency">
+        <rdfs:subClassOf rdf:resource="&foaf;/Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#TrafficData -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#TrafficData">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#TransportData"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasSampling"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#DynamicSampling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasOwner"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#TrafficAgency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#Transport -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#Transport">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Service"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystems"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SmartCityTechnologyEnablers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#isSubSystemOf"/>
+                <owl:someValuesFrom rdf:resource="http://dbpedia.org/ontology/City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Connectivity"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DataAnalytics"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DataManagement"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#InstrumentationAndMonitoring"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Interoperability"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#SecurityAndPrivacy"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#ComputingResources"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasData"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#TransportData"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#measuredBySensor"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SensorResource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasProcess"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#KeyCrossCityProcesses"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A city’s roads, streets, bike paths, trail systems, vehicles, railways, subways, buses, bicycles, streetcars, ferries, air and maritime ports – any and every system that relates to citizen mobility.</rdfs:comment>
+        <dct:source>Berst, Jesse. (2014). Smart Cities Readiness Guide. Smart Cities Council</dct:source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#TransportData -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#TransportData">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystemsData"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DynamicSampling"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Semi-StaticSampling"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#UrbanSensing -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#UrbanSensing">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Technologies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#UrbanSystems -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#UrbanSystems">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/City"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#UrbanSystemsData -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#UrbanSystemsData">
+        <rdfs:subClassOf rdf:resource="&DUL;InformationObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#W3C_Standards -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#W3C_Standards">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#SemanticDataStandards"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#Waste -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#Waste">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Service"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystems"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#measuredBySensor"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SensorResource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SmartCityTechnologyEnablers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasProcess"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#KeyCrossCityProcesses"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasData"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#WasteData"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#isSubSystemOf"/>
+                <owl:someValuesFrom rdf:resource="http://dbpedia.org/ontology/City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Connectivity"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DataAnalytics"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DataManagement"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#InstrumentationAndMonitoring"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Interoperability"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#SecurityAndPrivacy"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#ComputingResources"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#WasteData -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#WasteData">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystemsData"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasOwner"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#WasteManagementAgency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasSampling"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#DynamicSampling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#WasteManagementAgency -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#WasteManagementAgency">
+        <rdfs:subClassOf rdf:resource="&foaf;/Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#Water -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#Water">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Service"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystems"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasProcess"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#KeyCrossCityProcesses"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#isSubSystemOf"/>
+                <owl:someValuesFrom rdf:resource="http://dbpedia.org/ontology/City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasData"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#WaterData"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#measuredBySensor"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SensorResource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Connectivity"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DataAnalytics"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#DataManagement"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#InstrumentationAndMonitoring"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#Interoperability"/>
+                    <rdf:Description rdf:about="http://www.ontopolis.org/osmosys#SecurityAndPrivacy"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#ComputingResources"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasTechnologyEnabler"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#SmartCityTechnologyEnablers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dct:source>Berst, Jesse. (2014). Smart Cities Readiness Guide. Smart Cities Council</dct:source>
+        <rdfs:comment xml:lang="en">The infrastructure responsible for Water – from collection to distribution, to use and finally reuse and recycling. Pipes, distribution centers, catchment areas, treatment facilities, pump stations, plants and even the water meters at private homes are all essential components of this responsibility. Water purity and cleanliness are also addressed here.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#WaterData -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#WaterData">
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#UrbanSystemsData"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasSampling"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#DynamicSampling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasOwner"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#WaterManagementAgency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#WaterManagementAgency -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#WaterManagementAgency">
+        <rdfs:subClassOf rdf:resource="&foaf;/Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#WebEntity -->
+
+    <owl:Class rdf:about="http://www.ontopolis.org/osmosys#WebEntity"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#DateTimeInterval -->
+
+    <owl:Class rdf:about="&time;DateTimeInterval">
+        <rdfs:subClassOf rdf:resource="&time;ProperInterval"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DUL;hasIntervalDate"/>
+                <owl:someValuesFrom rdf:resource="&xsd;dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant -->
+
+    <owl:Class rdf:about="&time;Instant">
+        <rdfs:subClassOf rdf:resource="&time;TemporalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Interval -->
+
+    <owl:Class rdf:about="&time;Interval">
+        <rdfs:subClassOf rdf:resource="&time;TemporalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#ProperInterval -->
+
+    <owl:Class rdf:about="&time;ProperInterval">
+        <rdfs:subClassOf rdf:resource="&time;Interval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#TemporalEntity -->
+
+    <owl:Class rdf:about="&time;TemporalEntity"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="&foaf;/Agent">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&DUL;CollectiveAgent"/>
+                    <rdf:Description rdf:about="&foaf;/Organization"/>
+                    <rdf:Description rdf:about="&foaf;/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontopolis.org/osmosys#Item"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#provides"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#Service"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#usesItem"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#Item"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#makesDecision"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#Decision"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasObject"/>
+                <owl:someValuesFrom rdf:resource="&dct;PhysicalObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DUL;isParticipantIn"/>
+                <owl:someValuesFrom rdf:resource="&dct;Event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#responsibleFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#Service"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dct:description xml:lang="en">An Item, but most often a Person, or Organization, providing a Service or taking a role in an Event.</dct:description>
+        <rdfs:seeAlso>http://dbpedia.org/ontology/Agent</rdfs:seeAlso>
+        <rdfs:comment xml:lang="en">An agent is an entity (e.g. person, group, software or physical artifact) that takes an active role or produces a specified effect.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Document -->
+
+    <owl:Class rdf:about="&foaf;/Document">
+        <rdfs:isDefinedBy>http://xmlns.com/foaf/spec/#term_Document</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Group -->
+
+    <owl:Class rdf:about="&foaf;/Group">
+        <rdfs:subClassOf rdf:resource="&DUL;CollectiveAgent"/>
+        <dct:description xml:lang="en">A group of Persons and/or Organizations that share common characteristics such as Place, circumstance, etc.</dct:description>
+        <rdfs:comment xml:lang="en">The Group class represents a collection of individual agents and may itself play the role of an Agent, i.e. something that can perform actions. While a Group has the characteristics of an Agent, it is also associated with a number of other Agents (typically people) who constitute the Group. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="&foaf;/Organization">
+        <rdfs:subClassOf rdf:resource="&foaf;/Agent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="http://schema.org/Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontopolis.org/osmosys#providesService"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontopolis.org/osmosys#Service"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The Organization class represents a kind of Agent corresponding to social institutions (e.g. companies, societies, municipalities etc.)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="&foaf;/Person">
+        <rdfs:subClassOf rdf:resource="&foaf;/Agent"/>
+        <rdfs:comment xml:lang="en">A Person class represents people.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#EML -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontopolis.org/osmosys#EML">
+        <rdf:type rdf:resource="http://www.ontopolis.org/osmosys#OGC_SWE_Standards"/>
+        <rdfs:comment xml:lang="en">The Event Pattern Markup Language (EML) is used to define event patterns as processing rules for Complex Event Processing (CEP) and Event Stream Processing (ESP)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#Facebook -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontopolis.org/osmosys#Facebook">
+        <rdf:type rdf:resource="http://www.ontopolis.org/osmosys#SocialMediaPlatform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#Foursquare -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontopolis.org/osmosys#Foursquare">
+        <rdf:type rdf:resource="http://www.ontopolis.org/osmosys#SocialMediaPlatform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#Instagram -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontopolis.org/osmosys#Instagram">
+        <rdf:type rdf:resource="http://www.ontopolis.org/osmosys#SocialMediaPlatform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#LegalInteroperability -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontopolis.org/osmosys#LegalInteroperability">
+        <rdf:type rdf:resource="http://www.ontopolis.org/osmosys#Interoperability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#O&amp;M -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontopolis.org/osmosys#O&amp;M">
+        <rdf:type rdf:resource="http://www.ontopolis.org/osmosys#OGC_SWE_Standards"/>
+        <rdfs:comment xml:lang="en">The Observations &amp; Measurements standard defines a domain independent, conceptual model for the representation of (spatiotemporal) measurement data.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#OWL2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontopolis.org/osmosys#OWL2">
+        <rdf:type rdf:resource="http://www.ontopolis.org/osmosys#W3C_Standards"/>
+        <rdfs:isDefinedBy>http://www.w3.org/2006/12/owl2-xml</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#OrganizationalInteroperability -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontopolis.org/osmosys#OrganizationalInteroperability">
+        <rdf:type rdf:resource="http://www.ontopolis.org/osmosys#Interoperability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#PolicyInteroperability -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontopolis.org/osmosys#PolicyInteroperability">
+        <rdf:type rdf:resource="http://www.ontopolis.org/osmosys#Interoperability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#QQ -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontopolis.org/osmosys#QQ">
+        <rdf:type rdf:resource="http://www.ontopolis.org/osmosys#SocialMediaPlatform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#RDF -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontopolis.org/osmosys#RDF">
+        <rdf:type rdf:resource="http://www.ontopolis.org/osmosys#W3C_Standards"/>
+        <rdfs:isDefinedBy>http://www.w3.org/1999/02/22-rdf-syntax-ns</rdfs:isDefinedBy>
+        <rdfs:comment>Resource Description Framework</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#RenRen -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontopolis.org/osmosys#RenRen">
+        <rdf:type rdf:resource="http://www.ontopolis.org/osmosys#SocialMediaPlatform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#SWECommon -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontopolis.org/osmosys#SWECommon">
+        <rdf:type rdf:resource="http://www.ontopolis.org/osmosys#OGC_SWE_Standards"/>
+        <rdfs:label>SWE Common</rdfs:label>
+        <rdfs:comment xml:lang="en">The SWE Common data model defines data types shared by multiple SWE specifications.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#SemanticInteroperability -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontopolis.org/osmosys#SemanticInteroperability">
+        <rdf:type rdf:resource="http://www.ontopolis.org/osmosys#Interoperability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#SensorML -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontopolis.org/osmosys#SensorML">
+        <rdf:type rdf:resource="http://www.ontopolis.org/osmosys#OGC_SWE_Standards"/>
+        <rdfs:comment xml:lang="en">The Sensor Markup Language specifies a model and XML encoding for the description of all kinds of sensor related processes.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#SinaWeibo -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontopolis.org/osmosys#SinaWeibo">
+        <rdf:type rdf:resource="http://www.ontopolis.org/osmosys#SocialMediaPlatform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#SyntacticInteroperability -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontopolis.org/osmosys#SyntacticInteroperability">
+        <rdf:type rdf:resource="http://www.ontopolis.org/osmosys#Interoperability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#TechnicalInteroperability -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontopolis.org/osmosys#TechnicalInteroperability">
+        <rdf:type rdf:resource="http://www.ontopolis.org/osmosys#Interoperability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontopolis.org/osmosys#Twitter -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontopolis.org/osmosys#Twitter">
+        <rdf:type rdf:resource="http://www.ontopolis.org/osmosys#SocialMediaPlatform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2000/01/rdf-schema">
+        <rdf:type rdf:resource="http://www.ontopolis.org/osmosys#W3C_Standards"/>
+        <rdfs:isDefinedBy>http://www.w3.org/2000/01/rdf-schema</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">RDF Schema provides a data-modelling vocabulary for RDF data. RDF Schema is an extension of the basic RDF vocabulary.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2002/07/owl">
+        <rdf:type rdf:resource="http://www.ontopolis.org/osmosys#W3C_Standards"/>
+        <rdfs:isDefinedBy>http://www.w3.org/2002/07/owl</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">Web Ontology Language</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

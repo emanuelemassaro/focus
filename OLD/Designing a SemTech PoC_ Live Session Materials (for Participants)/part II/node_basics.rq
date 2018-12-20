@@ -1,0 +1,25 @@
+# Note that ?node is the relevant node's IRI and must be used in the query
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sesame: <http://www.openrdf.org/schema/sesame#>
+PREFIX rank: <http://www.ontotext.com/owlim/RDFRank#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX imdb: <http://example.org/movieDB/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT ?type ?label ?comment ?rank {
+    {
+    	{
+            # Get node type
+        	?node sesame:directType ?type.
+    	} UNION {
+        	# Get node label
+            ?node rdfs:label | skos:prefLabel | imdb:title | foaf:name ?label.
+        } UNION {
+        	# Get node comment
+            ?node rdfs:comment ?comment.
+        } UNION {
+            # Get node rank that will be used to define node size. Should be a number between 0 and 1
+            ?node rank:hasRDFRank ?rank
+        }
+    }
+} ORDER BY ?type

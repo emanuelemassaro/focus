@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1501253437758" name="http://semanco02.hs-albsig.de/repository/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl" uri="SEMANCO.owl.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1501253437758" name="http://www.disit.org/km4city/schema" uri="km4city.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1501253437758" name="http://www.mapcelona.org/city.owl" uri="macelona.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1501253437758" name="http://www.ontopolis.org/osmosys" uri="OSMoSys_RDF.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1501253437758" name="https://route-owl.github.io/ontology" uri="route.rdf"/>
+    </group>
+</catalog>

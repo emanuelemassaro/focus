@@ -1,0 +1,11 @@
+# SH1: Shared edges
+# Outgoing edges (predicate-object pairs) that the node shares with another node
+
+PREFIX dbr: <http://dbpedia.org/resource/>
+PREFIX imdb: <http://example.org/movieDB/>
+
+SELECT DISTINCT ?p ?o {
+    BIND( imdb:1 AS ?node)
+    ?node ?p ?o .
+    FILTER EXISTS { ?different_node ?p ?o . FILTER(?node != ?different_node) }
+}

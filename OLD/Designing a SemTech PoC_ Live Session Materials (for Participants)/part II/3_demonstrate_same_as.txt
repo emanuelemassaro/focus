@@ -1,0 +1,8 @@
+PREFIX countries: <http://example.org/countries/>
+PREFIX imdb: <http://example.org/movieDB/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+select * {
+    ?movie a imdb:Movie ;
+           imdb:country ?c .
+}

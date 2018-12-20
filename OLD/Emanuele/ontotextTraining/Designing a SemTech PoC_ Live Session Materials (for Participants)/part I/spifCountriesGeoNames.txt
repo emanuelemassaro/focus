@@ -1,0 +1,27 @@
+
+
+PREFIX : <http://example.org/countries/>
+PREFIX spif: <http://spinrdf.org/spif#>
+
+INSERT {graph <http://example.org/countries/> {
+	?idURI a :Country;
+		:isoCode ?isoCode;
+		:iso3Code ?iso3Code;
+		:fipsCode ?fipsCode;
+		:name ?CountryName;
+		:GDPUSDBillions ?GDPUSDBillions;
+		:GDPUSDMillions ?GDPUSDMillions.
+	}
+} WHERE {
+	SERVICE <http://localhost:7200/rdf-bridge/2098515849813> {
+		SELECT *
+		WHERE {
+			?s <urn:rowNumber> ?id.
+  		?s <urn:col:ISO> ?isoCode.
+  		?s <urn:col:ISO3> ?iso3Code.
+  		?s <urn:col:fips> ?fipsCode.
+		?s <urn:col:Country> ?CountryName.
+		BIND (spif:buildURI("<http://example.org/countries/{?1}>", ?isoCode) as ?idURI)
+		}
+	}
+}

@@ -1,0 +1,3717 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sustainableindicators#"
+     xml:base="http://www.semanticweb.org/sustainableindicators"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sustainableindicators">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/sustainableindicators"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#hasFramework -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sustainableindicators#hasFramework"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Air -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Air">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#CI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#CI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Frameworks"/>
+        <rdfs:comment>Cercle Indicators</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#CO2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#CO2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Air"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Climate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Climate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Crime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Crime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Deaths -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Deaths">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Disposal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Disposal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Waste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Economy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Economy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Sustainable_Indicators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Education -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Education">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Electricity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Electricity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Energy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Employment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Employment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Economy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Energy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Energy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Environment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Sustainable_Indicators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Frameworks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Frameworks"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#GDP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#GDP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Economy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Health -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Health">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#ICT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#ICT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Social"/>
+        <rdfs:comment>Information and communication technology</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#ISO37120 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#ISO37120">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Frameworks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Labor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Labor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Economy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Land -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Land">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Materials -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Materials">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Mobillity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Mobillity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#OECD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#OECD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Frameworks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Others_Econ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Others_Econ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Economy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Others_Env -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Others_Env">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Others_Soc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Others_Soc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Patent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Patent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Economy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Population -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Population">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Poverty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Poverty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Quality_Of_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Quality_Of_Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#SDG -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#SDG">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Frameworks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Social -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Social">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Sustainable_Indicators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Solid_Waste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Solid_Waste">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Waste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Sources -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Sources">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Energy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Sustainable_Indicators -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Sustainable_Indicators"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#TerritorialFragmentation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#TerritorialFragmentation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Land"/>
+        <rdfs:comment>Territorial fragmentation OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#UMI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#UMI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Frameworks"/>
+        <rdfs:comment>Urban Metabolism Indicators (Kennedy et al., Developing a multi-layered indicator set for urban metabolism studies in megacities (2014)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Waste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Waste">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Wastewater -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Wastewater">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Waste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#Water -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#Water">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#absoluteUpwardMobility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#absoluteUpwardMobility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Econ"/>
+        <rdfs:comment>Absolute Upward Mobility % SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#accessToParks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#accessToParks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Land"/>
+        <rdfs:comment>Access to Parks % SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#adultPopulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#adultPopulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Population"/>
+        <rdfs:comment>Adult population % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#airQuality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#airQuality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Air"/>
+        <rdfs:comment>Long term Pollution Index (IPL) CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#annualEmploymentChange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#annualEmploymentChange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Employment"/>
+        <rdfs:comment>Annual employment change % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#annualPopulationChange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#annualPopulationChange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Population"/>
+        <rdfs:comment>Annual population change % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#annualPrecipitation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#annualPrecipitation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Climate"/>
+        <rdfs:comment>Annual precipitation (mm) UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#annualSolarRadiation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#annualSolarRadiation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Climate"/>
+        <rdfs:comment>Annual solar radiation (kW h/m2 ) UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#authorizedElectricalService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#authorizedElectricalService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Energy"/>
+        <rdfs:comment>Authorized Electrical Service % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#averagePopulationSizeOfLocalGovernment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#averagePopulationSizeOfLocalGovernment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Population"/>
+        <rdfs:comment>Average population size of local government OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#bicyclePaths -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#bicyclePaths">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Land"/>
+        <rdfs:comment>Bicycle Paths km per 100000 Persons ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#biodiversity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#biodiversity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Env"/>
+        <rdfs:comment>Diversity of plant species [Vascular plant species/km2] CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#biomass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#biomass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Sources"/>
+        <rdfs:comment>Biomass/biofuels (excluding power generation) TJ UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#broadbandPenetration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#broadbandPenetration">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#internetConnections"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Soc"/>
+        <rdfs:comment>Broadband Penetration % SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#buildingGrossFloorAreas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#buildingGrossFloorAreas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Land"/>
+        <rdfs:comment>Building gross floor areas (m2) UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#buildingMaterials -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#buildingMaterials">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Materials"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#cO2EmissionsPerCapita -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#cO2EmissionsPerCapita">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#climate"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#CO2"/>
+        <rdfs:comment>CO2 emissions per capita  (tonnes per inhabitant) OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#cO2EnergyEmissionsOfTheMetropolitanArea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#cO2EnergyEmissionsOfTheMetropolitanArea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#CO2"/>
+        <rdfs:comment>CO2 energy emissions of the metropolitan area as a share of the national energy industry emissions % OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#cO2TransportEmissionsOfTheMetropolitanArea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#cO2TransportEmissionsOfTheMetropolitanArea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#CO2"/>
+        <rdfs:comment>CO2 transport emissions of the metropolitan area as a share of the national transport emissions from transport % OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#capitalSpending -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#capitalSpending">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Econ"/>
+        <rdfs:comment>Capital Spending % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#carbonEmissions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#carbonEmissions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Air"/>
+        <rdfs:comment>Carbon Emissions Tons per capita SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#cellPhoneConnections -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#cellPhoneConnections">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Env"/>
+        <rdfs:comment>Cell Phone Connections per 100000 persons ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#cement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#cement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#buildingMaterials"/>
+        <rdfs:comment>Cement Kt UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#changeInNativeSpecies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#changeInNativeSpecies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Env"/>
+        <rdfs:comment>Change in Native Species % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#childPopulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#childPopulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Population"/>
+        <rdfs:comment>Child population % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#childrenUnder18LivingBelowTwiceThePovertyThreshold -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#childrenUnder18LivingBelowTwiceThePovertyThreshold">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Poverty"/>
+        <rdfs:comment>Children under 18 living below twice the poverty threshold % SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#citizenRepresentation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#citizenRepresentation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Soc"/>
+        <rdfs:comment>Citizen Representation per 100000 persons ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#cityLandArea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#cityLandArea">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#urbanisedArea"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#urbanizedAreaUMI"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Land"/>
+        <rdfs:comment>City Land Area km2 ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#cityProductPerCapita -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#cityProductPerCapita">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#GDP"/>
+        <rdfs:comment>City product per capita USD ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#climate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#climate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Climate"/>
+        <rdfs:comment>CO2 emissions [Tonnes / capita] CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#coal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#coal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Sources"/>
+        <rdfs:comment>Coal (excluding power generation) TJ</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#commercialAirConnectivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#commercialAirConnectivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Air"/>
+        <rdfs:comment>Commercial Air Connectivity per year ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#commutingTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#commutingTime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Mobillity"/>
+        <rdfs:comment>Commuting Time minutes SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#concentrationOfPopulationInTheCore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#concentrationOfPopulationInTheCore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Population"/>
+        <rdfs:comment>Concentration of population in the core (%) OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#coolingDegreeDays -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#coolingDegreeDays">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Climate"/>
+        <rdfs:comment>Cooling degree days (25 ◦ C base) UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#costOfLiving -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#costOfLiving">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Econ"/>
+        <rdfs:comment>Rent level [CHF/m2] CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#countryGDP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#countryGDP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#GDP"/>
+        <rdfs:comment>Country GDP USD ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#countryGDPPerCapita -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#countryGDPPerCapita">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#gdpPerCapita"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#gdpUMI"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#income"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#GDP"/>
+        <rdfs:comment>Country GDP per capita USD ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#debtServiceRatio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#debtServiceRatio">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#publicFinance"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Econ"/>
+        <rdfs:comment>Debt Service Ratio % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#diabetesIncidences -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#diabetesIncidences">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Health"/>
+        <rdfs:comment>Diabetes Incidences per 1000 SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#diesel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#diesel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Sources"/>
+        <rdfs:comment>Diesel TJ</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#disconnectedYouth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#disconnectedYouth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Soc"/>
+        <rdfs:comment>Disconnected Youth % SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#disposalByBurningOpenly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#disposalByBurningOpenly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Disposal"/>
+        <rdfs:comment>Disposal by Burning Openly % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#disposalByIncinerator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#disposalByIncinerator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Disposal"/>
+        <rdfs:comment>Disposal by Incinerator % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#disposalByLandfill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#disposalByLandfill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Disposal"/>
+        <rdfs:comment>Disposal by Landfill % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#disposalByOpenDump -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#disposalByOpenDump">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Disposal"/>
+        <rdfs:comment>Disposal by Open Dump % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#disposalByOther -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#disposalByOther">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Disposal"/>
+        <rdfs:comment>Disposal by Other % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#domesticWaterConsumption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#domesticWaterConsumption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Water"/>
+        <rdfs:comment>Domestic Water Consumption liters per day per capita ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#dominantDistributor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#dominantDistributor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#numberOfLocalDistributors"/>
+        <rdfs:comment>Is there a dominant distributor (i.e., serving &gt;80% of market)? yes/no UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#dominantDistributor1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#dominantDistributor1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#numberOfPowerSuppliers"/>
+        <rdfs:comment>Is there a dominant distributor (i.e., serving &gt;80% of market)? yes/no UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#dwellingDensity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#dwellingDensity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Land"/>
+        <rdfs:comment>Dwelling density sq per km ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#ePACleanupSites -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#ePACleanupSites">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Land"/>
+        <rdfs:comment>EPA Cleanup Sites per sq mile SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#econimicalStructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#econimicalStructure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Labor"/>
+        <rdfs:comment>Jobs in sectors with high labor productivity [%] CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#electricPowerQuality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#electricPowerQuality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Energy"/>
+        <rdfs:comment>Renewable energy sources including recovered heat CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#electricalInterruptionLength -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#electricalInterruptionLength">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Energy"/>
+        <rdfs:comment>Electrical Interruption Length hours ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#electricalInterruptions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#electricalInterruptions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Energy"/>
+        <rdfs:comment>Electrical Interruptions per customer per year ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#electricalLineLosses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#electricalLineLosses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Energy"/>
+        <rdfs:comment>Electrical line losses (or non-revenue electricity) GW h UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#electricityConsumptionGrid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#electricityConsumptionGrid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Electricity"/>
+        <rdfs:comment>Electricity consumption grid GW h UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#electricityConsumptionStationary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#electricityConsumptionStationary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Electricity"/>
+        <rdfs:comment>Electricity consumption stationary GW h UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#electricityConsumptionUMI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#electricityConsumptionUMI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Electricity"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#electricityFromRenewableSources -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#electricityFromRenewableSources">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Electricity"/>
+        <rdfs:comment>Electricity from Renewable Sources % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#emergencyResponseTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#emergencyResponseTime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Soc"/>
+        <rdfs:comment>Emergency Response Time min ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#employment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#employment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Employment"/>
+        <rdfs:comment>Employment (persons) OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#employmentAsAShareOfTheWorkingAgePopulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#employmentAsAShareOfTheWorkingAgePopulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Employment"/>
+        <rdfs:comment>Employment as a share of the working age population (%) OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#employmentOfTheMetropolitanAreaAsAShareOfNationalValue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#employmentOfTheMetropolitanAreaAsAShareOfNationalValue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Employment"/>
+        <rdfs:comment>Employment of the metropolitan area as a share of national value (%) OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#energyConsumption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#energyConsumption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Energy"/>
+        <rdfs:comment>Total energy consumption [kWh / capita] CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#estimatedAverageExposureToAirPollution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#estimatedAverageExposureToAirPollution">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#pM2.5AverageLevels"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Air"/>
+        <rdfs:comment>Estimated average exposure to air pollution (PM2.5) based on imagery data OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#expendituresForCultureAndRecreation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#expendituresForCultureAndRecreation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Soc"/>
+        <rdfs:comment>Expenditures for culture and recreation [CHF / capita] CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#feedInTariffs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#feedInTariffs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Electricity"/>
+        <rdfs:comment>Feed in tariffs yes/no UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#femaleStudentEnrolment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#femaleStudentEnrolment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Education"/>
+        <rdfs:comment>Female Student Enrolment % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#fireResponseTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#fireResponseTime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Soc"/>
+        <rdfs:comment>Fire Response Time min ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#food">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Materials"/>
+        <rdfs:comment>Food Kt UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#foreign-bornPopulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#foreign-bornPopulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Population"/>
+        <rdfs:comment>Foreign-born population % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#fuelOil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#fuelOil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Sources"/>
+        <rdfs:comment>Fuel oil (excluding power generation) TJ</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#full-timeEmployment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#full-timeEmployment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Employment"/>
+        <rdfs:comment>Full-time Employment % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#gasoline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#gasoline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Sources"/>
+        <rdfs:comment>Gasoline TJ</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#gdp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#gdp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#GDP"/>
+        <rdfs:comment>GDP (millions US$) OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#gdpOfTheMetropolitanArea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#gdpOfTheMetropolitanArea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#GDP"/>
+        <rdfs:comment>GDP of the metropolitan area as a share of national value (%) OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#gdpPerCapita -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#gdpPerCapita">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#gdpUMI"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#income"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#GDP"/>
+        <rdfs:comment>Value_GDP per capita (US$) OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#gdpUMI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#gdpUMI">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#income"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#GDP"/>
+        <rdfs:comment>GDP 2001, 2006, 2011 UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#genderGapInEarnings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#genderGapInEarnings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Soc"/>
+        <rdfs:comment>Gender Gap in Earnings % SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#ghgEmissions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#ghgEmissions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Air"/>
+        <rdfs:comment>GHG Emissions tonnes per capita ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#ghgEmissionsFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#ghgEmissionsFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Sources"/>
+        <rdfs:comment>GHG emissions factor t CO2 e (GW h)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#giniCoefficient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#giniCoefficient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Econ"/>
+        <rdfs:comment>GINI Coefficient index SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#greenArea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#greenArea">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#greenAreaISO"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#greenOpenSpace"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#landArea"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Land"/>
+        <rdfs:comment>Green area per million people (square meters per million person)_x</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#greenAreaISO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#greenAreaISO">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#greenOpenSpace"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Land"/>
+        <rdfs:comment>Green Area Hectare per 100000 Persons ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#greenOpenSpace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#greenOpenSpace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Land"/>
+        <rdfs:comment>Green Open Space sq meters per capita SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#grossCapitalBudget -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#grossCapitalBudget">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Econ"/>
+        <rdfs:comment>Gross Capital Budget USD ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#grossMetropolitanProductGrowthRatePerCapita -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#grossMetropolitanProductGrowthRatePerCapita">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#GDP"/>
+        <rdfs:comment>Gross Metropolitan Product growth rate per capita % SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#grossOperatingBudget -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#grossOperatingBudget">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Econ"/>
+        <rdfs:comment>Gross Operating Budget USD ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#groundWaterProduction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#groundWaterProduction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Water"/>
+        <rdfs:comment>Production (ground water) ML</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#gunViolence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#gunViolence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Crime"/>
+        <rdfs:comment>Gun Violence per 100,000 SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#hazardousWasteGenerated -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#hazardousWasteGenerated">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Waste"/>
+        <rdfs:comment>Hazardous Waste Generated tonnes per capita ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#hazardousWasteRecycled -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#hazardousWasteRecycled">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Waste"/>
+        <rdfs:comment>Hazardous Waste Recycled % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#health -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#health">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Health"/>
+        <rdfs:comment>Years of potential life lost [Years / 100&apos;000 inhabitants] CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#healthInsuranceCoverage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#healthInsuranceCoverage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Health"/>
+        <rdfs:comment>Health Insurance Coverage % SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#heartAttackDeaths -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#heartAttackDeaths">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Deaths"/>
+        <rdfs:comment>Heart Attack Deaths per 100000 SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#heatingDegreeDays -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#heatingDegreeDays">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Climate"/>
+        <rdfs:comment>Heating degree days (18C base)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#high-CapacityPublicTransit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#high-CapacityPublicTransit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Mobillity"/>
+        <rdfs:comment>High-Capacity Public Transit km per 100000 Persons ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#highSchoolDropoutRate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#highSchoolDropoutRate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Education"/>
+        <rdfs:comment>High School Dropout Rate % SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#higherEducationDegrees -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#higherEducationDegrees">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Education"/>
+        <rdfs:comment>Higher Education Degrees per 100000 persons ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#homicideVictims -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#homicideVictims">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Crime"/>
+        <rdfs:comment>Homicide victims per 100,000 SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#hoursWithoutElectricity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#hoursWithoutElectricity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Quality_Of_Service"/>
+        <rdfs:comment>Average number of hours per year without electricity supply, planned or unplanned</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#householdIncome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#householdIncome">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Econ"/>
+        <rdfs:comment>Household income USD ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#households -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#households">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Econ"/>
+        <rdfs:comment>Households Number ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#householdsWithoutAccessToPipedWaterAndSanitation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#householdsWithoutAccessToPipedWaterAndSanitation">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#noDirectWaterAccess"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Quality_Of_Service"/>
+        <rdfs:comment>Households without Access to Piped Water and Sanitation % SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#housingAffordability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#housingAffordability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Econ"/>
+        <rdfs:comment>Housing Affordability per 1000 sq feet SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#humanitarianAid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#humanitarianAid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Soc"/>
+        <rdfs:comment>humanitarian aid activities [‰] CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#hydropower -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#hydropower">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Sources"/>
+        <rdfs:comment>Hydropower %</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#improvedSanitationAccess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#improvedSanitationAccess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Env"/>
+        <rdfs:comment>Improved Sanitation Access % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#improvedWaterAccess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#improvedWaterAccess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Water"/>
+        <rdfs:comment>Improved Water Access % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#in-patientHospitalBeds -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#in-patientHospitalBeds">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Health"/>
+        <rdfs:comment>In-Patient Hospital Beds per 100000 persons ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#income -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#income">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#GDP"/>
+        <rdfs:comment>GDP [CHF/capita] CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#incomeDistribution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#incomeDistribution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Econ"/>
+        <rdfs:comment>Income distribution % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#independentRegulator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#independentRegulator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Electricity"/>
+        <rdfs:comment>Is there an independent regulator? yes/no UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#independentRegulator2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#independentRegulator2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#naturalGas"/>
+        <rdfs:comment>Is there an independent regulator? yes/no UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#independentRegulator4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#independentRegulator4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Water"/>
+        <rdfs:comment>Is there an independent regulator? yes/no UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#independentRegulator5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#independentRegulator5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Wastewater"/>
+        <rdfs:comment>Is there an independent regulator? yes/no UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#indoorRecreationSpace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#indoorRecreationSpace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Land"/>
+        <rdfs:comment>Indoor Recreation Space mÂ² per capita ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#industrial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#industrial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#electricityConsumptionUMI"/>
+        <rdfs:comment>Industrial %</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#industrial1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#industrial1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#stationaryEnergyConsumptionUMI"/>
+        <rdfs:comment>Industrial % UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#infantMortality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#infantMortality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Deaths"/>
+        <rdfs:comment>Infant Mortality per 1000 SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#inflationRate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#inflationRate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Econ"/>
+        <rdfs:comment>Inflation rate % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#informalSettlements -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#informalSettlements">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Soc"/>
+        <rdfs:comment>Informal Settlements % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#innovations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#innovations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Labor"/>
+        <rdfs:comment>Jobs in innovative branches [%] CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#internetConnections -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#internetConnections">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Soc"/>
+        <rdfs:comment>Internet Connections per 100000 persons ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#investments -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#investments">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Econ"/>
+        <rdfs:comment>Expansion, transformation and maintenance [%] CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#jetFuel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#jetFuel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Sources"/>
+        <rdfs:comment>Jet Fuel TJ</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#knowHow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#knowHow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Econ"/>
+        <rdfs:comment>Level of qualification [%] CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#labourForce -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#labourForce">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Labor"/>
+        <rdfs:comment>abour force (persons) OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#labourForceOfTheMetropolitanArea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#labourForceOfTheMetropolitanArea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Labor"/>
+        <rdfs:comment>Labour force of the metropolitan area as a share of national value (%) OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#labourMarket -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#labourMarket">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#unemploymentRate"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#unemploymentRate2"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Employment"/>
+        <rdfs:comment>Unemployment rate [%] CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#labourProductivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#labourProductivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Labor"/>
+        <rdfs:comment>Labour productivity OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#landArea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#landArea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Land"/>
+        <rdfs:comment>Land Area (sq. km) UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#landlineConnections -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#landlineConnections">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Land"/>
+        <rdfs:comment>Landline Connections per 100000 persons ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#lifeExpectancy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#lifeExpectancy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Soc"/>
+        <rdfs:comment>Life Expectancy years ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#lightPassengerPublicTransit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#lightPassengerPublicTransit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Mobillity"/>
+        <rdfs:comment>Light Passenger Public Transit km per 100000 Persons ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#localGovernments -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#localGovernments">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Soc"/>
+        <rdfs:comment>Local governments (count) OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#localGovernmentsInTheCore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#localGovernmentsInTheCore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Soc"/>
+        <rdfs:comment>Local governments in the core (count) OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#lowBirthWeight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#lowBirthWeight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Health"/>
+        <rdfs:comment>Low Birth Weight (&lt;2500g) % SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#lowIncomeTaxpayers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#lowIncomeTaxpayers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Econ"/>
+        <rdfs:comment>Low-income taxpayers [%] CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#maleStudentEnrolment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#maleStudentEnrolment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Education"/>
+        <rdfs:comment>Male Student Enrolment % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#marineFuel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#marineFuel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Sources"/>
+        <rdfs:comment>Marine Fuel2 TJ</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#materialsConsumption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#materialsConsumption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Materials"/>
+        <rdfs:comment>Urban waste [Kg/capita] CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#materialsConsumption1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#materialsConsumption1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Materials"/>
+        <rdfs:comment>Rate of separate collection [%] CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#metropolitanLandShareOfNationalValue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#metropolitanLandShareOfNationalValue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Land"/>
+        <rdfs:comment>Metropolitan land share of national value (%) OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#mobilePhonesUsage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#mobilePhonesUsage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#ICT"/>
+        <rdfs:comment>% Of population using mobile phones</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#mobillity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#mobillity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Mobillity"/>
+        <rdfs:comment>Access to the public transport system [m] CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#modeShare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#modeShare">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Mobillity"/>
+        <rdfs:comment>Mode Share % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#mortgagedHomeownersSpending30PersentOrMoreOfHouseholdIncomeOnSelectedOwnerCosts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#mortgagedHomeownersSpending30PersentOrMoreOfHouseholdIncomeOnSelectedOwnerCosts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Econ"/>
+        <rdfs:comment>Mortgaged Homeowners Spending 30 Percent or More of Household Income on Selected Owner Costs % SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#naturalDisasterRelatedDeaths -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#naturalDisasterRelatedDeaths">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Deaths"/>
+        <rdfs:comment>Natural Disaster-Related Deaths per 100000 per year ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#naturalGas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#naturalGas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Sources"/>
+        <rdfs:comment>Natural gas (excluding power generation) TJ UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#naturalizations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#naturalizations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Soc"/>
+        <rdfs:comment>Naturalizations [%] CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#natureAndLandscape -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#natureAndLandscape">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Land"/>
+        <rdfs:comment>Value of natural areas [%] CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#newImmigrantPopulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#newImmigrantPopulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Population"/>
+        <rdfs:comment>New immigrant population % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#no2Concentration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#no2Concentration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Air"/>
+        <rdfs:comment>NO2 Concentration Î¼g per mÂ³ ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#noDirectDrinkableWaterAccess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#noDirectDrinkableWaterAccess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Quality_Of_Service"/>
+        <rdfs:comment>% Of households without direct access to drinkable water</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#noDirectWaterAccess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#noDirectWaterAccess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Quality_Of_Service"/>
+        <rdfs:comment>% Of households without direct access to water UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#noGridElectricityConnection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#noGridElectricityConnection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Quality_Of_Service"/>
+        <rdfs:comment>% Of households without grid electricity connection</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#noInternetAccess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#noInternetAccess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#ICT"/>
+        <rdfs:comment>% Of population with access to internet</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#noPublicWasteCollection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#noPublicWasteCollection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Quality_Of_Service"/>
+        <rdfs:comment>% Of households living in areas without public waste collection</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#noSewage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#noSewage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Quality_Of_Service"/>
+        <rdfs:comment>% Of households without sewage</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#noWastewaterTreatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#noWastewaterTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Wastewater"/>
+        <rdfs:comment>No Wastewater Treatment % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#noise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#noise">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#noisePollution"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Quality_Of_Service"/>
+        <rdfs:comment>Noise pollution due to traffic % CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#noisePollution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#noisePollution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Quality_Of_Service"/>
+        <rdfs:comment>Noise Pollution % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#non-citizenPopulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#non-citizenPopulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Population"/>
+        <rdfs:comment>Non-citizen population % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#non-residentialArea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#non-residentialArea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Land"/>
+        <rdfs:comment>Non-residential area % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#normalizedDeficit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#normalizedDeficit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Water"/>
+        <rdfs:comment>Normalized Deficit (Water Stress Index) SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#nuclear -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#nuclear">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Sources"/>
+        <rdfs:comment>Nuclear %</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#numberOf2-WheeledVehicles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#numberOf2-WheeledVehicles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Mobillity"/>
+        <rdfs:comment>Number of 2-Wheeled Vehicles per capita ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#numberOfAutomobiles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#numberOfAutomobiles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Mobillity"/>
+        <rdfs:comment>Number of Automobiles per capita ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#numberOfBuildingsWithPV -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#numberOfBuildingsWithPV">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Electricity"/>
+        <rdfs:comment>Number of buildings with PV</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#numberOfBusinesses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#numberOfBusinesses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Labor"/>
+        <rdfs:comment>Number of Businesses per 100000 persons ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#numberOfCorruptionConvictions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#numberOfCorruptionConvictions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Soc"/>
+        <rdfs:comment>Number of Corruption Convictions per 100000 persons</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#numberOfDistributors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#numberOfDistributors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#districtHeating/Cooling"/>
+        <rdfs:comment>Number of distributors 1-2, 3-5, &gt;5 UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#numberOfElectricVehicleChargingPoints -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#numberOfElectricVehicleChargingPoints">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Electricity"/>
+        <rdfs:comment>Number of electric vehicle charging points UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#numberOfElectricVehicles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#numberOfElectricVehicles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Electricity"/>
+        <rdfs:comment>Number of electric vehicles UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#numberOfFireRelatedDeaths -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#numberOfFireRelatedDeaths">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Deaths"/>
+        <rdfs:comment>Number of Fire-Related Deaths per 100000 per year ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#numberOfFirefighters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#numberOfFirefighters">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Soc"/>
+        <rdfs:comment>Number of Firefighters per 100000 persons ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#numberOfHomeless -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#numberOfHomeless">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Soc"/>
+        <rdfs:comment>Number of Homeless per 100000 persons ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#numberOfHomicides -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#numberOfHomicides">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Crime"/>
+        <rdfs:comment>Number of Homicides per 100000 per year ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#numberOfLocalDistributors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#numberOfLocalDistributors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Electricity"/>
+        <rdfs:comment>Number of local distributors 1-2, 3-5, &gt;5 UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#numberOfLocalDistributors2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#numberOfLocalDistributors2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#naturalGas"/>
+        <rdfs:comment>Number of local distributors 1-2, 3-5, &gt;5 UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#numberOfLocalDistributors3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#numberOfLocalDistributors3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Water"/>
+        <rdfs:comment>Number of local distributors 1-2, 3-5, &gt;5 UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#numberOfMentalHealthPractitioners -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#numberOfMentalHealthPractitioners">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Health"/>
+        <rdfs:comment>Number of Mental Health Practitioners per 100000 persons ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#numberOfNativeSpecies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#numberOfNativeSpecies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Env"/>
+        <rdfs:comment>Number of native species Number ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#numberOfNaturalGasVehicles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#numberOfNaturalGasVehicles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#naturalGas"/>
+        <rdfs:comment>Number of natural gas vehicles</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#numberOfNewPatents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#numberOfNewPatents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Patent"/>
+        <rdfs:comment>Number of New Patents per 100000 per year ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#numberOfPhysicians -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#numberOfPhysicians">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Labor"/>
+        <rdfs:comment>Number of Physicians per 100000 persons ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#numberOfPoliceOfficers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#numberOfPoliceOfficers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Labor"/>
+        <rdfs:comment>Number of Police Officers per 100000 per year ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#numberOfPowerSuppliers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#numberOfPowerSuppliers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Electricity"/>
+        <rdfs:comment>Number of power suppliers (generators) 1-2, 3-5, &gt;5 UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#numberOfPropertyCrimes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#numberOfPropertyCrimes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Crime"/>
+        <rdfs:comment>Number of Property Crimes per 100000 per year ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#numberOfRegisteredVoters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#numberOfRegisteredVoters">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Soc"/>
+        <rdfs:comment>Number of Registered Voters % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#numberOfViolentCrimes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#numberOfViolentCrimes">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#seriousViolenceOffences"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#violentCrimes"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Crime"/>
+        <rdfs:comment>Number of Violent Crimes per 100000 per year ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#o3Concentration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#o3Concentration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Air"/>
+        <rdfs:comment>O3 Concentration Î¼g per mÂ³ ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#occupiedDwellings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#occupiedDwellings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Soc"/>
+        <rdfs:comment>Occupied dwellings Number ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#off-siteSolar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#off-siteSolar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Sources"/>
+        <rdfs:comment>Off-site Solar %</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#off-siteWind -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#off-siteWind">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Sources"/>
+        <rdfs:comment>Off-site Wind %</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#otherIncentivesForRenewables -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#otherIncentivesForRenewables">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Electricity"/>
+        <rdfs:comment>Other incentives for renewables (e.g., tax breaks, cash subsidies, green certificates) yes/no type UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#outdoorRecreationSpace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#outdoorRecreationSpace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Land"/>
+        <rdfs:comment>Outdoor Recreation Space mÂ² per capita ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#own-SourceRevenues -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#own-SourceRevenues">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Econ"/>
+        <rdfs:comment>Own-Source Revenues % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#ownership -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#ownership">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#numberOfLocalDistributors"/>
+        <rdfs:comment>Ownership all public, all private, mix UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#ownership1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#ownership1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#numberOfPowerSuppliers"/>
+        <rdfs:comment>Ownership all public, all private, mix UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#ownership2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#ownership2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#naturalGas"/>
+        <rdfs:comment>Ownership all public, all private, mix UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#ownership3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#ownership3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#districtHeating/Cooling"/>
+        <rdfs:comment>Ownership all public, all private, mix UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#ownership4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#ownership4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Water"/>
+        <rdfs:comment>Ownership all public, all private, mix UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#ownership5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#ownership5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Wastewater"/>
+        <rdfs:comment>Ownership all public, all private, mix UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#ozoneLevels -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#ozoneLevels">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Air"/>
+        <rdfs:comment>Ozone Levels (8-Hr) parts per million SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#pM2.5AverageLevels -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#pM2.5AverageLevels">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Air"/>
+        <rdfs:comment>PM 2.5 Average Levels (Population Weighted) µg/m³ SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#participationInElectionsAndVoting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#participationInElectionsAndVoting">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#voterParticipationRate"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Soc"/>
+        <rdfs:comment>Participation in elections and voting [%] CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#participationRate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#participationRate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Labor"/>
+        <rdfs:comment>Participation rate (%) OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#patentApplications -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#patentApplications">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#pctPatentApplications"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Patent"/>
+        <rdfs:comment>Patent Applications per 1000 SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#pctPatentApplications -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#pctPatentApplications">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Patent"/>
+        <rdfs:comment>PCT patent applications (count) OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#pctPatentApplicationsOfTheMetropolitanArea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#pctPatentApplicationsOfTheMetropolitanArea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Patent"/>
+        <rdfs:comment>PCT patent applications of the metropolitan area as % of national value OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#pctPatentsApplicationsPer10000Inhabitants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#pctPatentsApplicationsPer10000Inhabitants">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Patent"/>
+        <rdfs:comment>PCT patents applications per 10,000 inhabitants OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#persantageOfConsumptionFromDistrictSchemes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#persantageOfConsumptionFromDistrictSchemes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#districtHeating/Cooling"/>
+        <rdfs:comment>% Of city heating/cooling consumption from district schemes</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#persantageOfConsumptionFromIndependentGenerators -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#persantageOfConsumptionFromIndependentGenerators">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Electricity"/>
+        <rdfs:comment>% of consumption from independent generators</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#personsPerUnit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#personsPerUnit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Population"/>
+        <rdfs:comment>Persons per unit Persons ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#pm10Concentration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#pm10Concentration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Air"/>
+        <rdfs:comment>PM10 Concentration Î¼g per mÂ³ ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#pm2.5Concentration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#pm2.5Concentration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Air"/>
+        <rdfs:comment>PM2.5 Concentration Î¼g per mÂ³ ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#policeResponseTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#policeResponseTime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Soc"/>
+        <rdfs:comment>Police Response Time min ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#polycentricity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#polycentricity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Land"/>
+        <rdfs:comment>Polycentricity OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#populationAbove25YearsOfAgeWithAnUndergraduateDegreeOrAbove -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#populationAbove25YearsOfAgeWithAnUndergraduateDegreeOrAbove">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Education"/>
+        <rdfs:comment>Population Above 25 Years of Age with an Undergraduate Degree or Above % SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#populationDensity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#populationDensity">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#populationDensity2"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Population"/>
+        <rdfs:comment>Population density (persons per km2) OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#populationDensity2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#populationDensity2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Population"/>
+        <rdfs:comment>Population Density per km2 ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#populationDependencyRatio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#populationDependencyRatio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Population"/>
+        <rdfs:comment>Population dependency ratio % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#populationLivingBelowTheNationalPovertyLine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#populationLivingBelowTheNationalPovertyLine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Poverty"/>
+        <rdfs:comment>Population Living below the National Poverty Line % SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#populationLivingInPoverty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#populationLivingInPoverty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Population"/>
+        <rdfs:comment>Population Living in Poverty % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#populationLivingInSlums -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#populationLivingInSlums">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Population"/>
+        <rdfs:comment>Population Living in Slums % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#populationOfTheCityArea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#populationOfTheCityArea">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#totalCityPopulation"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Population"/>
+        <rdfs:comment>Population of the city area (persons) OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#populationOfTheCommutingZoneArea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#populationOfTheCommutingZoneArea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Population"/>
+        <rdfs:comment>Population of the commuting zone area (persons) OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#populationOfTheMetropolitanAreaAsAShareOfNationalValue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#populationOfTheMetropolitanAreaAsAShareOfNationalValue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Population"/>
+        <rdfs:comment>Population of the metropolitan area as a share of national value (%) OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#populationUMI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#populationUMI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Population"/>
+        <rdfs:comment>Population (year round residents) 2001, 2006, 2011</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#potableWaterService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#potableWaterService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Water"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+        <rdfs:isDefinedBy>Potable Water Service % ISO</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#prevalenceOfObesity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#prevalenceOfObesity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Health"/>
+        <rdfs:comment>Prevalence of Obesity SDG UN</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#primaryCarePhysicians -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#primaryCarePhysicians">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Health"/>
+        <rdfs:comment>Primary Care Physicians per 100000 SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#primaryEducationCompletion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#primaryEducationCompletion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Education"/>
+        <rdfs:comment>Primary Education Completion % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#primaryWastewaterTreatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#primaryWastewaterTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Wastewater"/>
+        <rdfs:comment>Primary Wastewater Treatment % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#publicBuildingElectricityUse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#publicBuildingElectricityUse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Energy"/>
+        <rdfs:comment>Public Building Electricity Use kWh per mÂ² ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#publicFinance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#publicFinance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Econ"/>
+        <rdfs:comment>Net debt to equity ratio [%] CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#publicTransitTrips -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#publicTransitTrips">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Mobillity"/>
+        <rdfs:comment>Public Transit Trips trips per capita per year ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#publicTransportUseForWorkCommute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#publicTransportUseForWorkCommute">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Mobillity"/>
+        <rdfs:comment>Public Transport Use for Work Commute % SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#qualityOfHigherEducation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#qualityOfHigherEducation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Education"/>
+        <rdfs:comment>Quality of Higher Education index SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#racialSeggregation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#racialSeggregation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Soc"/>
+        <rdfs:comment>Racial Seggregation index SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#rainfall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#rainfall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Climate"/>
+        <rdfs:comment>Rainfall ãŽœ ? ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#realPerCapitaPersonalIncome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#realPerCapitaPersonalIncome">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Econ"/>
+        <rdfs:comment>Real per capita personal income (chained 2009 dollars) USD SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#rentBurdenedResidents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#rentBurdenedResidents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Econ"/>
+        <rdfs:comment>Rent Burdened Residents % SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#residential -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#residential">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#electricityConsumptionUMI"/>
+        <rdfs:comment>Residential %</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#residential1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#residential1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#stationaryEnergyConsumptionUMI"/>
+        <rdfs:comment>Residential % UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#residentialElectricalUse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#residentialElectricalUse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Energy"/>
+        <rdfs:comment>Residential Electrical Use kWh per year per capita ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#residentialSolidWasteCollection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#residentialSolidWasteCollection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Solid_Waste"/>
+        <rdfs:comment>Residential Solid Waste Collection % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#roadDensity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#roadDensity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Land"/>
+        <rdfs:comment>Road Density Miles per sq mile SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#roadTrafficAccidentsWithVictims -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#roadTrafficAccidentsWithVictims">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#trafficDeaths"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Deaths"/>
+        <rdfs:comment>Road traffic Accidents with victims [Accidents / 1000 inhabitants]</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#schoolEnrollmentRate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#schoolEnrollmentRate">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#youngPeopleEducation"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Education"/>
+        <rdfs:comment>School Enrollment rate % SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#secondaryEducationCompletion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#secondaryEducationCompletion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Education"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+        <rdfs:isDefinedBy>Secondary Education Completion % ISO</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#secondaryWastewaterTreatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#secondaryWastewaterTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Wastewater"/>
+        <rdfs:comment>Secondary Wastewater Treatment % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#seniorPopulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#seniorPopulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Population"/>
+        <rdfs:comment>Senior population % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#seriousViolenceOffences -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#seriousViolenceOffences">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#violentCrimes"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Crime"/>
+        <rdfs:comment>Offences of serious violence [Offences per 100&apos;000 inhabitants] CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#sexualViolenceIncidencesReported -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#sexualViolenceIncidencesReported">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Crime"/>
+        <rdfs:comment>Sexual Violence Incidences Reported per 100,000 SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#shareOfRenewableEnergyGenerated -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#shareOfRenewableEnergyGenerated">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Energy"/>
+        <rdfs:comment>Share of Renewable Energy Generated % SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#snowfall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#snowfall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Climate"/>
+        <rdfs:comment>Snowfall cm ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#so2Concentration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#so2Concentration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Air"/>
+        <rdfs:comment>SO2 Concentration Î¼g per mÂ³ ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#socialAssistance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#socialAssistance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Soc"/>
+        <rdfs:comment>Recipients of social assistance benefits [%] CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#soilQuality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#soilQuality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Land"/>
+        <rdfs:comment>Soil Pollution by heavy metals CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#soilUsage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#soilUsage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Land"/>
+        <rdfs:comment>Built-up area [m2/capita] CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#solidWasteCollected -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#solidWasteCollected">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Solid_Waste"/>
+        <rdfs:comment>Solid Waste Collected tonnes per capita ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#solidWasteDisposalOnLand -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#solidWasteDisposalOnLand">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Solid_Waste"/>
+        <rdfs:comment>Solid waste disposal on land Kt</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#solidWasteRecycled -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#solidWasteRecycled">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Solid_Waste"/>
+        <rdfs:comment>Solid Waste Recycled % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#sprawlIndex -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#sprawlIndex">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Land"/>
+        <rdfs:comment>Sprawl index OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#stationaryEnergyConsumptionUMI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#stationaryEnergyConsumptionUMI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Energy"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#steel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#steel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#buildingMaterials"/>
+        <rdfs:comment>Steel Kt UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#stemJobsGrowthRate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#stemJobsGrowthRate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Econ"/>
+        <rdfs:comment>STEM Jobs Growth Rate % SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#suicideRate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#suicideRate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Deaths"/>
+        <rdfs:comment>Suicide Rate per 100000 persons ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#surfaceWaterProduction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#surfaceWaterProduction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Water"/>
+        <rdfs:comment>Production (surface water) ML</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#taxes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#taxes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Econ"/>
+        <rdfs:comment>Index of the exploitation of the potential tax CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#taxesCollected -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#taxesCollected">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Econ"/>
+        <rdfs:comment>Taxes Collected % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#teenageBirths -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#teenageBirths">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Health"/>
+        <rdfs:comment>Teenage Births % SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#temperature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#temperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Climate"/>
+        <rdfs:comment>Temperature â„ƒ ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#tertiaryWastewaterTreatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#tertiaryWastewaterTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Wastewater"/>
+        <rdfs:comment>Tertiary Wastewater Treatment % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#totalCityPopulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#totalCityPopulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Population"/>
+        <rdfs:comment>Total City Population Persons ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#totalElectricalUse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#totalElectricalUse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Energy"/>
+        <rdfs:comment>Total Electrical Use kWh per year per capita ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#totalLandArea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#totalLandArea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Land"/>
+        <rdfs:comment>Total land area (km2) OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#totalPopulationOfTheMetropolitanArea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#totalPopulationOfTheMetropolitanArea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Population"/>
+        <rdfs:comment>Total population of the metropolitan area OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#totalStudentEnrolment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#totalStudentEnrolment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Education"/>
+        <rdfs:comment>Total Student Enrolment % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#totalWaterConsumption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#totalWaterConsumption">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#waterConsumption"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Water"/>
+        <rdfs:comment>Total Water Consumption liters per day per capita ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#trafficDeaths -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#trafficDeaths">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Deaths"/>
+        <rdfs:comment>Traffic Deaths per 100000 SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#transportation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#transportation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#electricityConsumptionUMI"/>
+        <rdfs:comment>Transportation %</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#transportationFatalities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#transportationFatalities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Mobillity"/>
+        <rdfs:comment>Transportation Fatalities per 100000 per year ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#treesPlanted -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#treesPlanted">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Land"/>
+        <rdfs:comment>Trees Planted per 100000 per year ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#underAgeFiveMortalityRate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#underAgeFiveMortalityRate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Deaths"/>
+        <rdfs:comment>Under Age Five Mortality Rate per 1000 live births ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#unemploymentAsAShareOfTheLabourForce -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#unemploymentAsAShareOfTheLabourForce">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Employment"/>
+        <rdfs:comment>Unemployment as a share of the labour force (%) OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#unemploymentOECD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#unemploymentOECD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Employment"/>
+        <rdfs:comment>Unemployment (persons) OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#unemploymentRate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#unemploymentRate">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#unemploymentRate2"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Employment"/>
+        <rdfs:comment>Unemployment Rate % SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#unemploymentRate2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#unemploymentRate2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Employment"/>
+        <rdfs:comment>Unemployment Rate % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#unregisteredHouseholds -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#unregisteredHouseholds">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Econ"/>
+        <rdfs:comment>Unregistered Households % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#urbanisedArea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#urbanisedArea">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#urbanizedAreaUMI"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Land"/>
+        <rdfs:comment>Urbanised area (km2) OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#urbanisedAreaShare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#urbanisedAreaShare">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Land"/>
+        <rdfs:comment>Urbanised area share (%) OECD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#OECD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#urbanizedAreaUMI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#urbanizedAreaUMI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Land"/>
+        <rdfs:comment>Urbanized Area (sq. km) UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#violentCrimes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#violentCrimes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Crime"/>
+        <rdfs:comment>Violent Crimes per 100,000 SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#volunteerFirefighters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#volunteerFirefighters">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Soc"/>
+        <rdfs:comment>Volunteer Firefighters per 100000 persons ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#voterParticipationRate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#voterParticipationRate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Soc"/>
+        <rdfs:comment>Voter Participation Rate % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#walkingOrBicyclingForWorkCommute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#walkingOrBicyclingForWorkCommute">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Mobillity"/>
+        <rdfs:comment>Walking or Bicycling for Work Commute % SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#wasteIncineration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#wasteIncineration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Waste"/>
+        <rdfs:comment>Waste incineration Kt</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#wastewaterCollection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#wastewaterCollection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Wastewater"/>
+        <rdfs:comment>Wastewater Collection % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#wastewaterLoading -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#wastewaterLoading">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Wastewater"/>
+        <rdfs:comment>Wastewater loading kt BOD</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#wastewaterSubjectToTreatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#wastewaterSubjectToTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Quality_Of_Service"/>
+        <rdfs:comment>% Of waste water subject to treatment</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#wastewaterVolume -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#wastewaterVolume">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Wastewater"/>
+        <rdfs:comment>Wastewater volume ML</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#waterConsumption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#waterConsumption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Water"/>
+        <rdfs:comment>Water consumption ML</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#waterLineLosses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#waterLineLosses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Water"/>
+        <rdfs:comment>Water Line losses (or non-revenue water) ML</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#waterLoss -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#waterLoss">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Water"/>
+        <rdfs:comment>Water Loss % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#waterProduction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#waterProduction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Water"/>
+        <rdfs:comment>Water Production ML</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#waterQuality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#waterQuality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Water"/>
+        <rdfs:comment>The nitrate content of groundwater [mg/l]</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#waterRegulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#waterRegulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Water"/>
+        <rdfs:comment>Flow of water through the STEP [m3 / capita] CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#waterServiceInterruptions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#waterServiceInterruptions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Water"/>
+        <rdfs:comment>Water Service Interruptions Hours per year per household ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#womenElectedToOffice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#womenElectedToOffice">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sustainableindicators#womenInExecutivePositions"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Soc"/>
+        <rdfs:comment>Women Elected to Office % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#womenEmployedInCityGovernment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#womenEmployedInCityGovernment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Employment"/>
+        <rdfs:comment>Women Employed in City Government % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#womenInExecutivePositions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#womenInExecutivePositions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Soc"/>
+        <rdfs:comment>Women in executive positions [%] CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#youngPeopleEducation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#youngPeopleEducation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Education"/>
+        <rdfs:comment>Young people education [%] CI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#CI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#youthPopulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#youthPopulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Population"/>
+        <rdfs:comment>Youth population % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#youthUnemploymentRate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#youthUnemploymentRate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Employment"/>
+        <rdfs:comment>Youth Unemployment Rate % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#commercial&amp;IndustrialPropertyValues -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#commercial&amp;IndustrialPropertyValues">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Econ"/>
+        <rdfs:comment>Commercial and Industrial Property Values % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#commercial/institutional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#commercial/institutional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#electricityConsumptionUMI"/>
+        <rdfs:comment>Commercial/institutional %</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#commercial/institutional1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#commercial/institutional1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#stationaryEnergyConsumptionUMI"/>
+        <rdfs:comment>Commercial/institutional % UMI</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#districtHeating/Cooling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#districtHeating/Cooling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Energy"/>
+        <rdfs:comment>District heating or cooling</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#UMI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#jobs/HousingRatio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#jobs/HousingRatio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Econ"/>
+        <rdfs:comment>Jobs/Housing Ratio Jobs per Housing ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#male/FemaleRatio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#male/FemaleRatio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Soc"/>
+        <rdfs:comment>Male/female ratio Males per Female ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#numberOfNurses/Midwives -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#numberOfNurses/Midwives">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Labor"/>
+        <rdfs:comment>Number of Nurses/Midwives per 100000 persons ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#percentageOfCountry&apos;sGDP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#percentageOfCountry&apos;sGDP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#GDP"/>
+        <rdfs:comment>Percentage of country&apos;s GDP % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#percentageOfCountry&apos;sPopulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#percentageOfCountry&apos;sPopulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Population"/>
+        <rdfs:comment>Percentage of country&apos;s population % ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#student/TeacherRatio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#student/TeacherRatio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Education"/>
+        <rdfs:comment>Student/Teacher Ratio Students per teacher ISO</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#ISO37120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#syphilis,Chlamydia,GonorrheaCases -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#syphilis,Chlamydia,GonorrheaCases">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Health"/>
+        <rdfs:comment>Syphilis, Chlamydia, Gonorrhea Cases per 100000 SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sustainableindicators#toxicReleaseInAir,WaterAndLand -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sustainableindicators#toxicReleaseInAir,WaterAndLand">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sustainableindicators#Others_Env"/>
+        <rdfs:comment>Toxic Release in Air, Water and Land lbs/sq mile SDG</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/sustainableindicators#SDG"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

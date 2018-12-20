@@ -1,0 +1,17 @@
+# SH2: Shared edges, filtered by predicate
+# Outgoing edges (predicate-object pairs) that the node shares with another node
+# Some property types filtered out
+
+PREFIX dbr: <http://dbpedia.org/resource/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?p ?o {
+    BIND( imdb:1 AS ?node)
+    ?node ?p ?o .
+    FILTER(?p NOT IN ( rdf:type, owl:sameAs, imdb:color))
+    FILTER EXISTS { ?different_node ?p ?o . FILTER(?node != ?different_node) }
+}

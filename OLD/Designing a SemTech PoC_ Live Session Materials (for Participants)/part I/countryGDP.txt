@@ -1,0 +1,54 @@
+Rank	Country	GDP
+(millions of US$)
+ World[8]	75,212,696
+1	 United States	18,561,930
+—	 European Union[n 1][8]	17,110,523
+2	 China[n 2]	11,391,619
+3	 Japan	4,730,300
+4	 Germany	3,494,900
+5	 United Kingdom	2,649,890
+6	 France	2,488,280
+7	 India	2,250,990
+8	 Italy	1,852,500
+9	 Brazil	1,769,600
+10	 Canada	1,532,340
+11	 South Korea	1,404,380
+12	 Russia[n 3]	1,267,750
+13	 Australia	1,256,640
+14	 Spain	1,252,160
+15	 Mexico	1,063,610
+16	 Indonesia	940,953
+17	 Netherlands	769,930
+18	 Turkey	755,716
+19	  Switzerland	662,483
+20	 Saudi Arabia	657,785
+21	 Argentina	541,748
+22	 Republic of China (Taiwan)	519,149
+23	 Sweden	517,440
+24	 Belgium	470,179
+25	 Poland	467,350
+26	 Nigeria	415,080
+27	 Iran	412,304
+28	 Thailand	390,592
+29	 Austria	387,299
+30	 Norway	376,268
+31	 United Arab Emirates	375,022
+32	 Venezuela	333,715
+33	 Egypt	330,159[n 4]
+34	 Hong Kong	316,070
+35	 Israel	311,739
+36	 Philippines	311,687
+37	 Ireland	307,917
+38	 Malaysia	302,748
+39	 Denmark	302,571
+40	 Singapore	296,642
+41	 South Africa	280,367
+42	 Colombia	274,135
+43	 Pakistan	271,050[n 5]
+44	 Finland	239,186
+45	 Chile	234,903
+46	 Bangladesh	229,760
+47	 Portugal	205,860
+48	 Vietnam	200,493
+49	 Greece	195,878
+50	 Czech Republic	193,535

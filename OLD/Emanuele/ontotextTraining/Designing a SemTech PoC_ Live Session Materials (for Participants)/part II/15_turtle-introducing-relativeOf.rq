@@ -1,0 +1,11 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <http://example.org/movieDB/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+
+    dbo:child owl:inverseOf dbo:parent .
+    dbo:spouse rdfs:subPropertyOf :relativeOf .
+    dbo:child rdfs:subPropertyOf :relativeOf .
+    dbo:parent rdfs:subPropertyOf :relativeOf .
+    :relativeOf a owl:TransitiveProperty, owl:SymmetricProperty.

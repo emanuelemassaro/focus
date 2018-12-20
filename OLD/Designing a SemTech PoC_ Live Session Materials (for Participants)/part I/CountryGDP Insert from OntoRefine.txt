@@ -1,0 +1,19 @@
+PREFIX companies: <http://example.org/companies/>
+PREFIX spif: <http://spinrdf.org/spif#>
+
+construct {#graph <http://example.org/countryGDP/> {
+	?idURI a companies:Country;
+		companies:rank ?Rank;
+		companies:name ?CountryName;
+		companies:GDPUSDBillions ?GDPUSDBillions;
+		companies:GDPUSDMillions ?GDPUSDMillions.
+	#}
+} WHERE {
+		?s companies:rowNumber ?id.
+  		?s companies:Rank ?Rank.
+		?s companies:CountryName ?CountryName.
+		?s companies:Country ?Country.
+		?s companies:GDPUSDBillions ?GDPUSDBillions.
+		?s companies:GDPUSDMillions ?GDPUSDMillions.
+		BIND (spif:buildURI("<http://example.org/companies/{?1}>", ?Country) as ?idURI)
+}
